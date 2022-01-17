@@ -11,7 +11,10 @@
 
 	- [Extra] What is the relationship between 2A ∪ B and 2A ∪ 2B .
 4. Show that for any language L, L* = (L*)* =(L+)* =(L*)+
+	- L+ is a subset of L*.
+	> [answer](./assets/4.png)
 5. Find relation between L1(L2 ∩ L3) and L1L2 ∩ L1L3
+	> Both are equal. *can be proved by example*
 6. Prove that for every n ≥ 0, ∑𝑛𝑖=1 𝑖2 = 𝑛(𝑛 + 1)(2𝑛 + 1)/6
 	> Through PMI
 7. Prove that for any string x, |xr| = |x|
