@@ -1,0 +1,177 @@
+SHAH KANISHA4:36 PM
+sir what is PV of perpetuity?
+okay sir got it
+SHAH PARAM4:37 PM
+what is g?
+SHAH KANISHA4:37 PM
+Thankyou
+SHAH PARAM4:38 PM
+ok 
+SHETH DHRUVI4:41 PM
+4665.07
+SHAH KANISHA4:41 PM
+4665
+SANGHVI HARSHIL4:41 PM
+according to shortcut 4670
+SHAH KANISHA4:43 PM
+clear
+SHAH KANISHA4:45 PM
+7582 acc to shortcut
+RUSHIR MANOJ4:45 PM
+7582 acc to pvifa
+SHAH AKSHAT4:45 PM
+7581
+SANGHVI HARSHIL4:45 PM
+2000 * 3.791 (rounding off to 3 decimals)
+SAKARIYA GAURAV4:46 PM
+7581.57
+SANGHVI HARSHIL4:46 PM
+7582
+SHETH DHRUVI4:46 PM
+7582
+SANGHVI HARSHIL4:46 PM
+same ans by PVIFA
+SANGHVI HARSHIL4:48 PM
+50k
+SAKARIYA GAURAV4:48 PM
+b
+SHETH DHRUVI4:48 PM
+a
+SANGHVI HARSHIL4:49 PM
+initially B looks attractive because we don't see calculated amount. we just see high amount in hand and find it attractive
+RUSHIR MANOJ4:49 PM
+option a is feasible , as PV is 6150 for the lumpsum , hence getting 10k for 15yrs amounts to 150000 is much better
+SHETH DHRUVI4:49 PM
+He expects to live for 15 yrs so 15 *10K
+SHAH KANISHA4:49 PM
+66667 for a option
+hence more feasible
+Nisarg Joshi4:49 PM
+2 mins internet issues
+RUSHIR MANOJ4:50 PM
+also considering perpetuity he gets 66k against 50k of lumpsum
+hence
+SANGHVI HARSHIL4:55 PM
+yes sir
+SHAH KANISHA4:55 PM
+yes
+SHAH DHVANI4:55 PM
+yes sir
+SHETH DHRUVI4:55 PM
+yes
+SANGHVI HARSHIL5:00 PM
+visible5.847
+5.847**
+RUSHIR MANOJ5:00 PM
+sir it is 50000 not 10k
+SHAH KANISHA5:00 PM
+5.847
+RUSHIR MANOJ5:03 PM
+sir all clear
+SANGHVI HARSHIL5:06 PM
+yes
+SHETH DHRUVI5:06 PM
+yes
+SANGHVI HARSHIL5:07 PM
+8.137
+SHETH DHRUVI5:07 PM
+8.137
+SANGHVI HARSHIL5:07 PM
+1
+SHETH KAHAN5:08 PM
+Okay sir 
+SANGHVI HARSHIL5:08 PM
+now it is clear, sir.
+done writing sir
+SANGHVI HARSHIL5:09 PM
+growing annuity method?
+SANGHVI HARSHIL5:12 PM
+yes
+RUSHIR MANOJ5:12 PM
+yes 
+yes sir
+SANGHVI HARSHIL5:13 PM
+can you repeat once sir? couldnt understand
+SANGHVI HARSHIL5:15 PM
+clear sir
+yes sir
+SHETH DHRUVI5:17 PM
+22683
+SANGHVI HARSHIL5:17 PM
+~22683
+SHETH KAHAN5:19 PM
+22683
+SANGHVI HARSHIL5:19 PM
+19797.48
+no sir
+SHAH DHVANI5:20 PM
+no sir clear
+RUSHIR MANOJ5:20 PM
+no sir
+SANGHVI HARSHIL5:21 PM
+yes
+SHETH KAHAN5:21 PM
+yes sir
+SANGHVI HARSHIL5:24 PM
+26212
+SHETH DHRUVI5:24 PM
+26212
+SHAH AKSHAT5:24 PM
+26212
+RAMANI DARSHAN5:26 PM
+yes
+SAKARIYA GAURAV5:26 PM
+yes
+SANGHVI HARSHIL5:27 PM
+after one year
+SHAH KANISHA5:28 PM
+at the end of 1 year
+16?
+RUSHIR MANOJ5:29 PM
+14 after end of 15years
+SANGHVI HARSHIL5:31 PM
+yes
+RUSHIR MANOJ5:31 PM
+yes sir
+SANGHVI HARSHIL5:33 PM
+13150
+SHAH KANISHA5:34 PM
+13150
+SHETH DHRUVI5:34 PM
+13150
+SHAH DHVANI5:34 PM
+13,150
+SANGHVI HARSHIL5:35 PM
+yes sir. it is ~50k
+SHAH KANISHA5:35 PM
+yes 49937
+SANGHVI HARSHIL5:38 PM
+yes sir
+SHAH DHVANI5:38 PM
+yes sir
+SANGHVI HARSHIL5:39 PM
+annuity
+yes sir
+SHAH KANISHA5:39 PM
+yes sir
+SANGHVI HARSHIL5:42 PM
+right
+RUSHIR MANOJ5:44 PM
+sir after this could you share info about the Assignment for this subject
+SANGHVI HARSHIL5:45 PM
+A = approx. 26054.474
+SAKARIYA GAURAV5:45 PM
+26125.53
+yes
+PATEL KASHYAP5:47 PM
+26,132
+SANGHVI HARSHIL5:49 PM
+130275
+SANGHVI HARSHIL5:50 PM
+me too
+sir my and your answer match
+RUSHIR MANOJ5:51 PM
+sir 3.838 is correct
+SHETH DHRUVI5:52 PM
+Aren't we suppose to take 3 decimal points after calculating whole bracket?
+ok sir
