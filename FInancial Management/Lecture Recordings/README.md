@@ -1,3 +1,3 @@
 # List of lectures 
 
-[Lecture 1](https://www.youtube.com/watch?v=RnzbIFlnxi8)
+[go to YouTube Playlist](https://www.youtube.com/playlist?list=PLLiP5ZV4rXVm10seT1GazK4_O6R6L2BNy)
