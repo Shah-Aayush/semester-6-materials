@@ -1,0 +1,237 @@
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%% Credit %%%%%%%%%%%%%%%%%%%%%%%%
+
+% Aayush Shah 19bce245
+
+%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGE starts HERE %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{microtype}
+\captionsetup[table]{name=Tabel}
+\captionsetup[figure]{name=Gambar}
+\usepackage{tabulary}
+\usepackage{minted}
+% \usepackage{amsmath}
+\usepackage{fancyhdr}
+% \usepackage{amssymb}
+% \usepackage{amsthm}
+\usepackage{placeins}
+% \usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{psfrag}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{beramono}
+% Enable inserting code into the document
+\usepackage{listings}
+\usepackage{xcolor} 
+% custom color & style for listing
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{LightGray}{gray}{0.9}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{green},
+	keywordstyle=\color{codegreen},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+\renewcommand{\lstlistingname}{Kode}
+%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGE ends HERE %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Data Diri %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\student}{\textbf{Aayush Shah}}
+\newcommand{\course}{\textbf{19BCE245}}
+\newcommand{\assignment}{\textbf{ 2CSDE70}}
+
+%%%%%%%%%%%%%%%%%%% using theorem style %%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exa}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{quest}{Question}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lipsum}%% a garbage package you don't need except to create examples.
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Exploration of different frameworks, libraries and SDKs for Natural Language Processing}
+\rhead{ \thepage}
+\cfoot{\textbf{19BCE245 | Aayush Shah}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%%%%%%%%%%%%%%  Shortcut for usual set of numbers  %%%%%%%%%%%
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\setlength\headheight{14pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\begin{document}
+\subsection*{Practical 1. Exploration of different frameworks, libraries and SDKs for Natural Language Processing.}
+\thispagestyle{empty}
+\noindent
+\rule{17cm}{0.2cm}\\[0.3cm]
+Name: \student \hfill Natural Language Processing \assignment\\[0.1cm]
+Roll Number: \course \hfill 25 February, 2022\\
+\rule{17cm}{0.05cm}
+\vspace{0.1cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BODY DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Natural Language ToolKit}
+    The NLTK Library (Natural Language Toolkit) is a collection of libraries and tools for statistical language processing. It is one of the most powerful NLP libraries, containing packages for making robots understand human language and respond appropriately.
+    
+    Natural Language Processing with Python is a hands-on introduction to language processing programming. Written by the NLTK founders, it walks the reader through the principles of Python programming, working with corpora, categorising text, evaluating linguistic structure, and more. The book's online edition has been updated for Python 3 and NLTK 3.
+    
+    Learning Natural Language Toolkit will allow us to gain a new skill while also expanding your knowledge of NLP. Learning the NLTK library can help professionals advance their careers in AI and Natural Language Processing with Python.
+    
+    NLTK includes methods for tokenize words, POS, Tokenization, Stemming, Lemmatization, Punctuation, Character count, word count, WordNet, Word Embedding, seq2seq model, and other useful algorithms for natural language processing. We can use NLTK to analyze a text to see whether the sentiments expressed in it are positive or negative.
+    
+\section{Gensim}
+    Gensim, which stands for "Generate Similar," is a well-known open source natural language processing (NLP) framework for unsupervised topic modelling. It employs top academic models and advanced statistical machine learning to execute a variety of complex tasks such as document or word vector construction. For performance, Gensim is written in Python and Cython.
+    
+    Using its incremental online training algorithms, Gensim can easily process massive and web-scale corpora. It is scalable since there is no need for the entire input corpus to be fully stored in Random Access Memory (RAM) at any given time. In other words, regardless of the size of the corpus, all of its methods are memory-independent.
+    
+    As we all know, Python is an extremely versatile language, and Gensim, being pure Python, operates on any platforms that support Python and Numpy (such as Windows, Mac OS, and Linux).
+    
+    \textbf{Features}
+    \begin{itemize}
+    \item Other packages, such as 'scikit-learn' and 'R,' give topic modelling and word embedding capabilities, but Gensim's capabilities for generating topic models and word embedding are unsurpassed. It also gives more convenient text processing features
+    \item Another big advantage of Gensim is that it allows us to handle enormous text files without having to load the entire file into memory.
+    \item Because it employs unsupervised models, Gensim does not necessitate costly annotations or manual labelling of texts.
+    \end{itemize}
+
+\section{PyNLP}
+    PyNLPl, pronounced as ‘pineapple’, is a Python library for Natural Language Processing. It contains various modules useful for common, and less common, NLP tasks. PyNLPl can be used for basic tasks such as the extraction of n-grams and frequency lists, and to build simple language model. There are also more complex data types and algorithms. Moreover, there are parsers for file formats common in NLP (e.g. FoLiA/Giza/Moses/ARPA/Timbl/CQL). There are also clients to interface with various NLP specific servers. PyNLPl most notably features a very extensive library for working with FoLiA XML (Format for Linguistic Annotatation).
+
+The library is a divided into several packages and modules. It works on Python 2.7, as well as Python 3.
+
+The following modules are available:
+\begin{itemize}
+    \item pynlpl.datatypes - Extra datatypes (priority queues, patterns, tries)
+    \item pynlpl.evaluation - Evaluation & experiment classes (parameter search, wrapped progressive sampling, class evaluation (precision/recall/f-score/auc), sampler, confusion matrix, multithreaded experiment pool)
+    \item pynlpl.formats.cgn - Module for parsing CGN (Corpus Gesproken Nederlands) part-of-speech tags
+    \item pynlpl.formats.folia - Extensive library for reading and manipulating the documents in FoLiA format (Format for Linguistic Annotation).
+    \item pynlpl.formats.fql - Extensive library for the FoLiA Query Language (FQL), built on top of pynlpl.formats.folia. FQL is currently documented here.
+    \item pynlpl.formats.cql - Parser for the Corpus Query Language (CQL), as also used by Corpus Workbench and Sketch Engine. Contains a convertor to FQL.
+    \item pynlpl.formats.giza - Module for reading GIZA++ word alignment data
+    \item pynlpl.formats.moses - Module for reading Moses phrase-translation tables.
+    \item pynlpl.formats.sonar - Largely obsolete module for pre-releases of the SoNaR corpus, use pynlpl.formats.folia instead.
+    \item pynlpl.formats.timbl - Module for reading Timbl output (consider using python-timbl instead though)
+    \item pynlpl.lm.lm - Module for simple language model and reader for ARPA language model data as well (used by SRILM).
+    \item pynlpl.search - Various search algorithms (Breadth-first, depth-first, beam-search, hill climbing, A star, various variants of each)
+    \item pynlpl.statistics - Frequency lists, Levenshtein, common statistics and information theory functions
+    \item pynlpl.textprocessors - Simple tokeniser, n-gram extraction
+  \end{itemize}
+  
+ \section{Pattern}
+    Pattern is a web mining module for Python.We have a distinct function in the NLTK and spaCy libraries for tokenizing, POS tagging, and finding noun phrases in text documents. In the Pattern library, however, there is an all-in-one parse method that accepts a text string as an input parameter and returns corresponding tokens in the string, as well as the POS tag.The parse technique also indicates whether a token is a noun phrase, verb phrase, subject, or object. By setting the lemmata option to True, you can also retrieve lemmatized tokens.
+    
+It has tools for:
+\begin{itemize}
+    \item Data Mining: web services (Google, Twitter, Wikipedia), web crawler, HTML DOM parser
+    \item Natural Language Processing: part-of-speech taggers, n-gram search, sentiment analysis, WordNet
+   \item Machine Learning: vector space model, clustering, classification (KNN, SVM, Perceptron)
+   \item Network Analysis: graph centrality and visualization.
+ \end{itemize}
+ 
+\section{Polyglot}
+Polyglot is a natural language pipeline that supports massive multilingual applications.
+Polyglot is a Python open-source package that is used to conduct various NLP operations. It is quick because it is built on NumPy. It features a wide range of dedicated commands, which distinguishes it from the competition. It is comparable to spacy and can be used in languages where spacy is not supported.
+
+\begin{itemize}
+    \item Free software: GPLv3 license
+    \item Documentation: http://polyglot.readthedocs.org
+    \item GitHub: https://github.com/aboSamoor/polyglot
+    
+    \item Tokenization (165 Languages)
+    \item Language detection (196 Languages)
+    \item Named Entity Recognition (40 Languages)
+    \item Part of Speech Tagging (16 Languages)
+    \item Sentiment Analysis (136 Languages)
+    \item Word Embeddings (137 Languages)
+    \item Morphological analysis (135 Languages)
+    \item Transliteration (69 Languages)
+\end{itemize}
+ 
+\section{TextBlob}
+    TextBlob is a Python (2 and 3) text processing package. It offers a straightforward API for delving into typical natural language processing (NLP) activities like part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
+    
+\textbf{Features}
+\begin{itemize}
+    \item Noun phrase extraction
+    \item Part-of-speech tagging
+    \item Sentiment analysis
+    \item Classification (Naive Bayes, Decision Tree)
+    \item Tokenization (splitting text into words and sentences)
+    \item Word and phrase frequencies
+    \item Parsing
+    \item n-grams
+    \item Word inflection (pluralization and singularization) and lemmatization
+    \item Spelling correction
+    \item Add new models or languages through extensions
+    \item WordNet integration
+\end{itemize}
+  
+\section{Spacy}
+spaCy is a free, open-source library for NLP in Python. It’s written in Cython and is designed to build information extraction or natural language understanding systems. It’s built for production use and provides a concise and user-friendly API. If you’re working with a lot of text, you’ll eventually want to know more about it. For example, what’s it about? What do the words mean in context? Who is doing what to whom? spaCy is designed specifically for production use and helps you build applications that process and “understand” large volumes of text. It can be used to build information extraction or natural language understanding systems, or to pre-process text for deep learning.
+\textbf{Features of spaCy :}
+\begin{itemize}
+    \item Tokenization	Segmenting text into words, punctuations marks etc.
+    \item Part-of-speech (POS) Tagging	Assigning word types to tokens, like verb or noun.
+    \item Dependency Parsing	Assigning syntactic dependency labels, describing the relations between individual tokens, like subject or object.
+    \item Lemmatization	Assigning the base forms of words. For example, the lemma of “was” is “be”, and the lemma of “rats” is “rat”.
+    \item Sentence Boundary Detection (SBD)	Finding and segmenting individual sentences.
+    \item Named Entity Recognition (NER)	Labelling named “real-world” objects, like persons, companies or locations.
+    \item Entity Linking (EL)	Disambiguating textual entities to unique identifiers in a knowledge base.
+    \item Similarity	Comparing words, text spans and documents and how similar they are to each other.
+    \item Text Classification	Assigning categories or labels to a whole document, or parts of a document.
+    \item Rule-based Matching	Finding sequences of tokens based on their texts and linguistic annotations, similar to regular expressions.
+    \item Training	Updating and improving a statistical model’s predictions.
+    \item Serialization	Saving objects to files or byte strings.
+\end{itemize}
+
+
+
+\section{CoreNLP}
+CoreNLP is a framework that allows you to create a fully functional NLP pipeline with just a few lines of code. All of the major NLP processes, including as Part of Speech (POS) tagging, Named Entity Recognition (NER), Dependency Parsing, and Sentiment Analysis, are pre-built methods in the library. It also supports languages other than English, including Arabic, Chinese, German, French, and Spanish. The coreNLP pipeline is the fundamental building piece of coreNLP. The pipeline accepts an input text, processes it, and returns the results in the form of a coreDocument object. A coreNLP pipeline can be customised and tailored to your NLP project's specific requirements. This customisation is possible using the properties objects by adding, removing, or editing annotators. The pipeline itself is composed by 6 annotators.
+
+NLTK is excellent for text pre-processing and tokenization. It also comes with a decent POS tagger. Because Standford NLP demands more resources, using Standford Core NLP for merely tokenizing/POS labelling is a bit overkill.
+However, one significant distinction is that NLTK does not support parsing syntactic dependencies out of the box. For that, you must provide a Grammar, which can be time-consuming if the text domain is not confined. Standford NLP, on the other hand, provides a probabilistic parser for generic text as a downloadable model that is quite accurate. It also includes NER (Named Entity Recognition) and other features.
+
+\end{document}
