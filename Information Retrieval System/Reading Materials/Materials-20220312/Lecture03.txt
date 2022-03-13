@@ -1,0 +1,34 @@
+Text Processing
+
+CORPUS : 1 document, 1 sentence
+
+(1) Tokenization-  smallest unit of text is word.
+
+Eg.
+
+This is my second week of the course.
+tokens = {This,is,my,second,week,of,the,course}
+tokens or keywords
+
+(2) Stop Word Removal
+
+= {second,week,course}
+
+(3) Stemming
+
+= {second,week,course}
+
+NLTK - natual language toolkit
+
+(4) Case conversion
+
+= {second,week,course}
+
+Doubts of students
+(1) Stemming v lemmatization
+(2) terrorist killed people (remove by then?)
+
+
+
+
+

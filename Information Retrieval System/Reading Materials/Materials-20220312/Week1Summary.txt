@@ -1,0 +1,11 @@
+Summary of previous week
+
+- Introduction to the course
+- Architecture of IRS
+- Components of IRS 
+- Terminologies like corpus
+- Types of queries
+
+Agenda of today's session
+- Text Processing
+

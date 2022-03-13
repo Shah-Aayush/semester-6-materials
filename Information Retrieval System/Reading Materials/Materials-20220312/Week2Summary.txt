@@ -1,0 +1,10 @@
+Summary of previous week
+
+- Text Processing from a corpus
+- n dimensional vector (n = vocabulary terms)
+- Document Representation
+	- Boolean Retrieval Model
+
+Agenda of today's session
+- Vector Space model for document representation
+

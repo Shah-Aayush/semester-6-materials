@@ -1,0 +1,22 @@
+
+There are 10000 documents in the corpus.
+
+(1) A term T1 is appearing in almost all documents.(7000)
+
+(2) A term T2 is appearing in only ten documents.
+
+Query contains the term T1. 
+
+What will be the set of documents as a response from the search engine?
+
+
+
+* T1 is not discriminative.
+
+- A term T2 is present in very few documents in the corpus.
+- A term T1 is present in almost every document.
+
+Frequency
+(1) Term frequency within a document (TF)
+(2) Term frequency across the Documents
+ - DF : In how many documents this term is present? 

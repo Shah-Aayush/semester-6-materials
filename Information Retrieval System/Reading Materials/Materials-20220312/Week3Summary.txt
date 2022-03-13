@@ -1,0 +1,15 @@
+------------------------
+Summary of previous week
+------------------------
+
+- Euclidean distance
+- TF Representation
+
+-------------------------
+Agenda of today's session
+-------------------------
+
+- Cosine similarity
+- TF IDF representation
+- Query processing
+
