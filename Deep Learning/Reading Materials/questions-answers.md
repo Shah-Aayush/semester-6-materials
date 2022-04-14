@@ -26,7 +26,7 @@
 		- Pooling/Subsampling
 			- Pooling simplifies the output by performing nonlinear downsampling. The number of parameters that the network needs to learn about gets reduced. In convolutional neural networks, the operation is useful since the outgoing connections usually receive similar information.
 		
-3. **What is dropout? How is it useful?**
+3. ##  **What is dropout? How is it useful?**
 	- The term “dropout” refers to dropping out units (both hidden and visible) in a neural network.
 	- Simply put, dropout refers to ignoring units (i.e. neurons) during the training phase of certain set of neurons which is chosen at random. By “ignoring”, I mean these units are not considered during a particular forward or backward pass.
 	- More technically, At each training stage, individual nodes are either dropped out of the net with probability 1-p or kept with probability p, so that a reduced network is left; incoming and outgoing edges to a dropped-out node are also removed.
