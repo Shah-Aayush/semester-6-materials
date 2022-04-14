@@ -48,12 +48,84 @@
 			- Use all activations, but reduce them by a factor p (to account for the missing activations during training).
 		
 - ## What are different architectures of CNN? Discuss its evaluation critically.
+	- [in detail discussion can be found here](https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d#:~:text=CNN%20Architectures%3A%20LeNet%2C%20AlexNet%2C,GoogLeNet%2C%20ResNet%20and%20more%20%E2%80%A6.)
+	- LeNet-5
+	- AlexNet
+	- VGG-16
+	- Inception-v1
+	- Inception-v3
+	- ResNet-50
+	- Xception
+	- Inception-v4
+	- Inception-ResNets
+	- ResNeXt-50
+	
 - ## What is transfer learning? In which scenarios, it is useful? Discuss different transfer learning scenarios.
+	- In transfer learning, a machine exploits the knowledge gained from a previous task to improve generalization about another. For example, in training a classifier to predict whether an image contains food, you could use the knowledge it gained during training to recognize drinks.
+	- Transfer learning is generally used: To save time and resources from having to train multiple machine learning models from scratch to complete similar tasks. As an efficiency saving in areas of machine learning that require high amounts of resources such as image categorisation or natural language processing.
+
 - ## State the problem where transfer learning may be very useful. Justify your choice. Discuss how you will use transfer learning to solve this problem.
+	- The main benefits of transfer learning include the saving of resources and improved efficiency when training new models. It can also help with training models when only unlabelled datasets are available, as the bulk of the model will be pre-trained.
+	- Transfer learning reduces the efforts to build a model from scratch by using the fundamental logic or base algorithms within one domain and applying it to another. For instance, in the real-world, the balancing logic learned while riding a bicycle can be transferred to learn driving other two-wheeled vehicles.
+	- More : 
+		- Deep learning is definitely one of the specific categories of algorithms that has been utilized to reap the benefits of transfer learning very successfully. The following are a few examples:
+
+		- Transfer learning for NLP: Textual data presents all sorts of challenges when it comes to ML and deep learning. These are usually transformed or vectorized using different techniques. Embeddings, such as Word2vec and FastText, have been prepared using different training datasets. These are utilized in different tasks, such as sentiment analysis and document classification, by transferring the knowledge from the source tasks. Besides this, newer models like the Universal Sentence Encoder and BERT definitely present a myriad of possibilities for the future.
+		- Transfer learning for Audio/Speech: Similar to domains like NLP and Computer Vision, deep learning has been successfully used for tasks based on audio data. For instance, Automatic Speech Recognition (ASR) models developed for English have been successfully used to improve speech recognition performance for other languages, such as German. Also, automated-speaker identification is another example where transfer learning has greatly helped.
+		- Transfer learning for Computer Vision: Deep learning has been quite successfully utilized for various computer vision tasks, such as object recognition and identification, using different CNN architectures. In their paper, How transferable are features in deep neural networks, Yosinski and their co-authors (https://arxiv.org/abs/1411.1792) present their findings on how the lower layers act as conventional computer-vision feature extractors, such as edge detectors, while the final layers work toward task-specific features.
+
 - ## How can you use CNN for object detection? Propose possible modifications in the present state-of-the-art.
+	- Object detection consists of two separate tasks that are classification and localization. R-CNN stands for Region-based Convolutional Neural Network. The key concept behind the R-CNN series is region proposals. Region proposals are used to localize objects within an image.
+	- For each input image, we get a corresponding class as an output. Can we use this technique to detect various objects in an image? Yes, we can! Let’s look at how we can solve a general object detection problem using a CNN.
+		1. First, we take an image as input
+		2. Then we divide the image into various regions:
+		3. We will then consider each region as a separate image.
+		4. Pass all these regions (images) to the CNN and classify them into various classes.
+		5. Once we have divided each region into its corresponding class, we can combine all these regions to get the original image with the detected objects
+	- for **RCNN**
+		Below is a succinct summary of the steps followed in RCNN to detect objects:
+
+		- We first take a pre-trained convolutional neural network.
+		- Then, this model is retrained. We train the last layer of the network based on the number of classes that need to be detected.
+		- The third step is to get the Region of Interest for each image. We then reshape all these regions so that they can match the CNN input size.
+		- After getting the regions, we train SVM to classify objects and background. For each class, we train one binary SVM.
+		- Finally, we train a linear regression model to generate tighter bounding boxes for each identified object in the image.
+	
 - ## How can you use CNN for image classification? Propose possible modifications in the present state-of-the-art.
+	- Convolutional neural networks (CNNs) are deep neural networks that have the capability to classify and segment images. CNNs can be trained using supervised or unsupervised machine learning methods, depending on what you want them to do.
+		- Step 1: Choose a Dataset. ...
+		- Step 2: Prepare Dataset for Training. ...
+		- Step 3: Create Training Data. ...
+		- Step 4: Shuffle the Dataset. ...
+		- Step 5: Assigning Labels and Features. ...
+		- Step 6: Normalising X and converting labels to categorical data. ...
+		- Step 7: Split X and Y for use in CNN.
+		- Step 8: Define, compile and train the CNN Model
+		- Step 9: Accuracy and Score of model
+	- disadvantages of current CNN
+		- CNN do not encode the position and orientation of object.
+		- Lack of ability to be spatially invariant to the input data.
+		- Lots of training data is required.
 - ## Can you use CNN for image super resolution? Propose possible solutions.
+	- yes we can do this
+	- what is image super resolution ?
+		- Image super-resolution (SR) is the process of recovering high-resolution (HR) images from low-resolution (LR) images. It is an important class of image processing techniques in computer vision and image processing and enjoys a wide range of real-world applications, such as medical imaging, satellite imaging, surveillance and security, astronomical imaging, amongst others.
+	- reconstructing a high-resolution version of an image given a low-resolution version. It leverages efficient "sub-pixel convolution" layers, which learns an array of image upscaling filters.
+	- refer this paper for detail : [Fast and Accurate Image Super Resolution by Deep CNN with Skip Connection and Network in Network](https://arxiv.org/pdf/1707.05425.pdf)
+	
 - ## State different use cases of RNN and RBM. Identify novel applications of each.
+	- Applications of Recurrent Neural Networks (RNNs)
+		- RNN is great to recognize handwriting and speech, calculating each input (letter/word or a second of a audio file for example), to find the correct outputs. Basically, RNN was made to process information sequences.
+			- Prediction problems.
+			- Language Modelling and Generating Text.
+			- Machine Translation.
+			- Speech Recognition.
+			- Generating Image Descriptions.
+			- Video Tagging.
+			- Text Summarization.
+			- Call Center Analysis.
+	- RBMs have found applications in dimensionality reduction, classification, collaborative filtering, feature learning, topic modelling and even many body quantum mechanics. They can be trained in either supervised or unsupervised ways, depending on the task.
+
 - ## Ensemble method : Bagging Boosting Stacking
 	- how to combine models in ensemble learning? : We can mention three major kinds of meta-algorithms that aims at combining weak learners:
 	- **bagging**, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
