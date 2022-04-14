@@ -1,11 +1,13 @@
-# Deep Learning Questions
+# Deep Learning Questions-Answers
 
-1. **What is unstable gradient problem? Discuss in details.**
+> Questions are taken from [`moodle`](https://sites.google.com/a/nirmauni.ac.in/2csde61---deep-learning/home/academic-docs/v-question-bank) and answers are prepared by me from the use of `google` 🥲
+
+- ## What is unstable gradient problem? Discuss in details.
 	- A fundamental problem that occurs to gradients in early layers of a neural network. The unstable gradient problem is a fundamental problem that occurs in a neural network, that entails that a gradient in a deep neural network tends to either explode or vanish in early layers.
 	- The unstable gradient problem is not necessarily the vanishing gradient problem or the exploding gradient problem, but is rather due to the fact that gradient in early layers is the product of terms from all proceeding layers. More layers make the network an intrinsically unstable solution. Balancing all products of terms is the only way each layer in a neural network can close at the same speed and avoid vanishing or exploding gradients. Balanced product of terms occurring by chance becomes more and more unlikely with more layers. Neural networks therefor have layers that learn at different speeds, without being given any mechanisms or underlying reason for balancing learning speeds.
 	- When magnitudes of gradients accumulate, unstable networks are more likely to occur, which is a cause of poor prediction results.
 	
-2. **Critically compare feed forward neural networks with convolutional neural networks.**
+- ## Critically compare feed forward neural networks with convolutional neural networks.
 	- A feed-forward network connects every pixel with each node in the following layer, ignoring any spatial information present in the image. By contrast, a convolutional architecture looks at local regions of the image.
 	- Convolutional neural network is better than a feed-forward network since CNN has features parameter sharing and dimensionality reduction. Because of parameter sharing in CNN, the number of parameters is reduced thus the computations also decreased. The main intuition is the learning from one part of the image is also useful in another part of the image. Because of the dimensionality reduction in CNN, the computational power needed is reduced. 
 	- **Feed Forward Neural Network**
@@ -26,7 +28,7 @@
 		- Pooling/Subsampling
 			- Pooling simplifies the output by performing nonlinear downsampling. The number of parameters that the network needs to learn about gets reduced. In convolutional neural networks, the operation is useful since the outgoing connections usually receive similar information.
 		
-- ## 3. What is dropout? How is it useful?
+- ## What is dropout? How is it useful?
 	- The term “dropout” refers to dropping out units (both hidden and visible) in a neural network.
 	- Simply put, dropout refers to ignoring units (i.e. neurons) during the training phase of certain set of neurons which is chosen at random. By “ignoring”, I mean these units are not considered during a particular forward or backward pass.
 	- More technically, At each training stage, individual nodes are either dropped out of the net with probability 1-p or kept with probability p, so that a reduced network is left; incoming and outgoing edges to a dropped-out node are also removed.
@@ -44,3 +46,22 @@
 			- For each hidden layer, for each training sample, for each iteration, ignore (zero out) a random fraction, p, of nodes (and corresponding activations).
 		- Testing Phase:
 			- Use all activations, but reduce them by a factor p (to account for the missing activations during training).
+		
+- ## What are different architectures of CNN? Discuss its evaluation critically.
+- ## What is transfer learning? In which scenarios, it is useful? Discuss different transfer learning scenarios.
+- ## State the problem where transfer learning may be very useful. Justify your choice. Discuss how you will use transfer learning to solve this problem.
+- ## How can you use CNN for object detection? Propose possible modifications in the present state-of-the-art.
+- ## How can you use CNN for image classification? Propose possible modifications in the present state-of-the-art.
+- ## Can you use CNN for image super resolution? Propose possible solutions.
+- ## State different use cases of RNN and RBM. Identify novel applications of each.
+- ## Ensemble method : Bagging Boosting Stacking
+	- how to combine models in ensemble learning? : We can mention three major kinds of meta-algorithms that aims at combining weak learners:
+	- **bagging**, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
+	- **boosting**, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy
+	- **stacking**, that often considers heterogeneous weak learners, learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
+	- Very roughly, we can say that bagging will mainly focus at getting an ensemble model with less variance than its components whereas boosting and stacking will mainly try to produce strong models less biased than their components (even if variance can also be reduced).
+
+---
+
+[Read more...](https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/)
+
