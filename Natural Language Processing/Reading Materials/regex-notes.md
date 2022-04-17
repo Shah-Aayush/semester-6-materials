@@ -8,10 +8,12 @@
 - `\s`      - Whitespace (space, tab, newline)
 - `\S`      - Not Whitespace (space, tab, newline)
 
+
 - `\b`      - Word Boundary
 - `\B`      - Not a Word Boundary
 - `^`       - Beginning of a String
 - `$`       - End of a String
+
 
 - `[]`      - Matches Characters in brackets
 - `[^ ]`    - Matches Characters NOT in brackets
