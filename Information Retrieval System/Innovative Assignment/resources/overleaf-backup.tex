@@ -1,0 +1,112 @@
+\documentclass[conference]{IEEEtran}
+
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Query by Humming\\
+{\footnotesize \textsuperscript {}Information Retrieval System}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Shivam Panchal }
+\IEEEauthorblockA{\textit{19BCE150} \\
+\textit{19bce150@nirmauni.ac.in}\\
+% City, Country \\
+% email address or ORCID
+}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Priyal Palkhiwala}
+\IEEEauthorblockA{\textit{19BCE214} \\
+\textit{19bce214@nirmauni.ac.in}\\
+% City, Country \\
+% email address or ORCID
+}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Aayush Shah}
+\IEEEauthorblockA{\textit{19BCE245} \\
+\textit{19bce245@nirmauni.ac.in}\\
+% City, Country \\
+% email address or O19bceRCID
+}
+
+}
+
+\maketitle
+
+\begin{abstract}
+Query by humming (QbH) is a music retrieval technique that deviates from traditional classification systems such as title, artist, composer, and genre. It usually refers to songs or other pieces of music with a single topic or tune. The system compares a user-hummed tune (input query) to an existing database. After that, the system delivers a ranked list of music that comes closest to the supplied query.\cite{b1}
+\end{abstract}
+
+\begin{IEEEkeywords}
+Query-by-Humming, Similarity Matching, Music Information Retrieval, Dynamic Time Warping
+\end{IEEEkeywords}
+
+\section{Introduction}
+Many individuals listen to tunes on demand on their mobile devices. People utilise a variety of strategies to find their favourite songs, including search-by-text, which involves searching for a song based on a snippet of the lyrics, the artist's name, or other criteria. 
+Some apps, such as 'Shazam,' allow users to record and search for a music playing in the background. However, there is a problem to this strategy, which happens when users forget the words to a new song or miss the song that is playing in the background. Humming can be used as a query to find songs as a solution to this problem. When humming is prolonged, it produces a low, monotonous sound similar to that of speaking. The proposed system would turn a hummed melody into music and then compare it to a music database to find the most comparable tune/song.
+
+Because there are numerous ways for retrieving music, Music Information Retrieval (MIR) is a particularly interesting research subject. It's critical to select a match between the input query and the matching music while retrieving music. Query-by-Example (QBE), which takes a sample of an audio recording playing in the background and returns the result, is one of the methods that has been presented and is presently being used in the various application domain(s). In a Query-by-Humming (QBH) application, however, there is no effective way to tackle this problem. The goal of a Query-by-Humming application is to quickly obtain music that is most comparable to the hummed query.
+
+We'll examine the various music information retrieval strategies and associated system designs in this paper. In addition, We'll go through the Query-by-Humming method and its many approaches, which allows for a revolutionary manner of music retrieval. \cite{b2}
+
+\section{Techniques for Music Information Retrieval}
+MIR is a gradually advancing discipline with a possible future in quick information retrieval. This is due to the fact that it is quite similar to database retrieval; however, MIR uses a variety of approaches to retrieve music in a timely and effective manner. MIR encompasses multiple disciplines, including  psychology, musicology, signal processing, optical music recognition, and machine learning (ML). Businesses and researchers employ MIR in applications like as  automatic music transcription, recommender systems, automatic classification, and music production. The rest of this section goes into the approaches utilised by MIR systems.
+\subsection{Query-by-Text (QBT)}
+A QBT approach searches for similarities between songs using conceptual metadata such as text queries. This functionality is used by applications such as 'Spotify', 'Apple Music' and 'Youtube Music' for their music retrieval mechanism. Because it relies on previously known text that can be searched through the database, this was the very first technique introduced in the field of retrieval.
+\subsection{Query-by-Example (QBE)}
+The QBE technique, on the other hand, takes a segment of the original music recording and searches the database for the most similar song. 'Shazam' and 'SoundHound' are well-known examples of this type of technology in use in real-world applications. They employ a technique known as Audio Fingerprinting. This is the method of expressing an audio signal in a compact manner by extracting important features of the audio content.It is used to identify or search for an audio based on the fingerprint generated by the query sample. This is a well-known approach that is currently in use because it is quick and does not require the entire audio sample.
+\subsection{Query-by-Humming (QBH)}
+To query the database, the QBH approach only employs the natural humming voice emitted by humans. Furthermore, this strategy is appropriate because humming occurs spontaneously and can be associated in the user's mind.
+The Google Search app can recognise a song based on your humming or whistling, making it easier to discover new music. This is something we can accomplish directly on our mobile devices. It might also provide a score to reflect the similarity in melody between the user's and the original artist's singing.
+
+\section{Related Work}
+\subsection{Music Information Retrieval System Architectures}
+\subsection{Speech Feature Extraction}
+\subsection{Audio Fingerprinting}
+\subsection{Machine Learning-Based Music retrieval}
+\subsection{Query by Humming Systems}
+\subsection{Noise Reduction Techniques}
+
+\section{System Proposed}
+\subsection{Dataset}
+\subsection{Technical Stack}
+\subsection{Data Preprocessing}
+\subsection{Data Preparation and Storage}
+\subsection{Music Retrieval System}
+\subsection{Proposed solution with Database querying}
+
+\section{Experiments and Results}
+
+\section{Conclusion}
+
+\section{Future Work}
+
+\section{References}
+
+\begin{thebibliography}{00}
+\bibitem{b1} \href{https://en.wikipedia.org/wiki/Query_by_humming}{Wikipedia : Query by Humming}.
+\bibitem{b2} Patel, Parth, "Music Retrieval System Using Query-by-Humming" (2019). Master's Projects. 895.
+\href{https://scholarworks.sjsu.edu/etd_projects/895}{Research Paper}
+
+\end{thebibliography}
+\vspace{12pt}
+
+\end{document}
