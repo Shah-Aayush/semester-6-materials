@@ -104,15 +104,37 @@
 		- credit sales = total sales - cash sales
 	- Account payable period = avg creditors (avg payable) * 360 /cogs
 		- avg creditors = op balance + cl balance /2
-	- 
+	- calculation of cash cost
+		- sales
+		- - gross profit
+		> total mfg cost
+		- - materials
+		- - wages
+		> total mfg expenses 
+		- - cash mfg expenses
+		> depreciation
+		
+		
+		- total mfg cost
+		- - depreciation
+		> cash mfg cost (finished goods)
+		- + admin expesnse
+		- + selling and distribution expenses
+		> total cash cost (debtors)
+	
+	- Net working capital = total current asset - total current liabilities
+	- working capital requirement = net working capital + safety margin
 	
 - Receivable management
+	- credit standards/variables/policy
+	- credit period
+	- cash discount/discount policy / credit terms
+	- collection effort
 
 
 
-	- 
 
-Factors Affecting the Working Capital:
+## Factors Affecting the Working Capital:
 Length of Operating Cycle: The amount of working capital directly depends upon the length of operating cycle. ...
 Nature of Business: ...
 Scale of Operation: ...
@@ -123,7 +145,7 @@ Credit Allowed: ...
 Credit Avail:
 
 	
-Objectives of Financial Management
+## Objectives of Financial Management
 The financial management is generally concerned with procurement, allocation and control of financial resources of a concern. The objectives can be-
 
 To ensure regular and adequate supply of funds to the concern.
@@ -132,3 +154,40 @@ To ensure optimum funds utilization. Once the funds are procured, they should be
 To ensure safety on investment, i.e, funds should be invested in safe ventures so that adequate rate of return can be achieved.
 To plan a sound capital structure-There should be sound and fair composition of capital so that a balance is maintained between debt and equity capital.
 
+## long - short term sources of finance
+Long-Term Sources of Finance
+Long-term financing means capital requirements for a period of more than 5 years to 10, 15, 20 years or maybe more depending on other factors. Capital expenditures in fixed assets like plant and machinery, land and building, etc of business are funded using long-term sources of finance. Part of working capital which permanently stays with the business is also financed with long-term sources of funds. Long-term financing sources can be in the form of any of them:
+
+Share Capital or Equity Shares
+Preference Capital or Preference Shares
+Retained Earnings or Internal Accruals
+Debenture / Bonds
+Term Loans from Financial Institutes, Government, and Commercial Banks
+Venture Funding
+Asset Securitization
+International Financing by way of Euro Issue, Foreign Currency Loans, ADR, GDR, etc.
+Medium Term Sources of Finance
+Medium term financing means financing for a period of 3 to 5 years and is used generally for two reasons. One, when long-term capital is not available for the time being and second when deferred revenue expenditures like advertisements are made which are to be written off over a period of 3 to 5 years. Medium term financing sources can in the form of one of them:
+
+Preference Capital or Preference Shares
+Debenture / Bonds
+Medium Term Loans from
+Financial Institutes
+Government, and
+Commercial Banks
+Medium Term Note
+Lease Finance
+Hire Purchase Finance
+Short Term Sources of Finance
+Short term financing means financing for a period of less than 1 year. The need for short-term finance arises to finance the current assets of a business like an inventory of raw material and finished goods, debtors, minimum cash and bank balance etc. Short-term financing is also named as working capital financing. Short term finances are available in the form of:
+
+Trade Credit
+Short Term Loans like Working Capital Loans from Commercial Banks
+Fixed Deposits for a period of 1 year or less
+Advances received from customers
+Creditors
+Payables
+Factoring Services
+Bill Discounting etc.
+
+##
