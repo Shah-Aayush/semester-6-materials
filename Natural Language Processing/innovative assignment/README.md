@@ -1,3 +1,3 @@
 # Sentiment Analysis using Twitter dataset
 
-[Go to term paper](https://www.overleaf.com/read/ggbxzpgbwhct)
+[Go to repository](https://github.com/Shah-Aayush/Twitter-Sentiment-Analysis)
