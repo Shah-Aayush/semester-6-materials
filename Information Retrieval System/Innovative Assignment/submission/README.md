@@ -1,7 +1,7 @@
 # Query by Humming
 
-[go to term paper](https://www.overleaf.com/9263989379pcztqxpkfvxc)
-[go to presentation](https://www.overleaf.com/9263989379pcztqxpkfvxc)
+> [go to term paper](https://www.overleaf.com/9263989379pcztqxpkfvxc)
+> [go to presentation](https://www.overleaf.com/9263989379pcztqxpkfvxc)
 
 
 Query by humming (QbH) is a music retrieval system that branches off the original classification systems of title, artist, composer, and genre.
