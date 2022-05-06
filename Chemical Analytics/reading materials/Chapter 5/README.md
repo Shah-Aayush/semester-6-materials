@@ -26,7 +26,7 @@
 	
 	- sample is in between the coils and while in the sem the sample will be at the bottom of the coils
 	
-	> [TEM working](./assets/tem-working.png)
+	> ![TEM working](./assets/tem-working.png)
 	- parts : 
 		- electron source
 		- anode
