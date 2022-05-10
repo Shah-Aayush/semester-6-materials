@@ -133,6 +133,14 @@
 	- **stacking**, that often considers heterogeneous weak learners, learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
 	- Very roughly, we can say that bagging will mainly focus at getting an ensemble model with less variance than its components whereas boosting and stacking will mainly try to produce strong models less biased than their components (even if variance can also be reduced).
 
+- ## Dead Neuron
+	- The drawback of ReLU is that they cannot learn on examples for which their activation is zero. It usually happens if you initialize the entire neural network with zero and place ReLU on the hidden layers. Another cause is when a large gradient flows through, a ReLU neuron will update its weight and might be ended up with a big negative weight and bias. If this happens, this neuron will always produce 0 during the forward propagation, and then the gradient flowing through this neuron will forever be zero irrespective of the input.
+	
+	- In other words, the weights of this neuron will never be updated again. Such a neuron can be considered as a dead neuron, which is considered a kind of permanent “brain damage” in biological terms. A dead neuron can be thought of as a natural Dropout. But the problem is if every neuron in a specific hidden layer is dead, it cuts the gradient to the previous layer resulting in zero gradients to the layers behind it. It can be fixed by using smaller learning rates so that the big gradient doesn’t set a big negative weight and bias in a ReLU neuron. Another ﬁx is to use the Leaky ReLU, which allows the neurons outside the active interval to leak some gradient backward.
+
+
+
+
 ---
 
 [Read more...](https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/)
