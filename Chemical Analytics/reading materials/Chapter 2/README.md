@@ -24,23 +24,23 @@
 	- Interaction of matter with light
 	- whenever matter interacts with light, it either absorps or emits the light.
 
-	1. Absorption Spectroscopy
+	**1. Absorption Spectroscopy**
 		- absops the light energy
 		- measurement of absoption of electromagnetic radition.
 			- UV (185-400 nm) spectroscopy
 			- visible (400-800 nm) spectroscopy
 			- IR (0.76-15 μm) spectroscopy
-	1.1. Atomic Spectroscopy
+		- **1.1. Atomic Spectroscopy**
 			- concerned with the interaction of EMR with Atoms
 			- commonly in lower energy state called grown state
 			- high energy/intensity that it can go upto ATOM.
-	1.2. Molecular Spectroscopy
+		- **1.2. Molecular Spectroscopy**
 			- concerned with the interaction of EMR with Molecule
 				- UV (185-400 nm) spectroscopy
 				- visible (400-800 nm) spectroscopy
 				- IR (0.76-15 μm) spectroscopy
 			- low energy/intensity that it can go upto Molecule.
-	2. Emission Spectroscopy
+	**2. Emission Spectroscopy**
 		- emits the light energy
 		- emission is dispersed *(split up)* according to some property of the emission
 		- amount dispersion is measured.
