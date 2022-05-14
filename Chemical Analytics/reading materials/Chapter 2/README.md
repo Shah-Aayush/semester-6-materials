@@ -57,3 +57,21 @@
 - 1 erg = 1e-7 joule
 - 1 calorie = 4.18 joule
 - to give answer in mole<sup>-1</sup> : multiply it with **6.023 x 10<sup>23</sup>**
+- to get answer in calorie from joule : divide joule value with **4.18**
+- to get answer in joule from calorie : multiply calorie value with **4.18**
+- to get answer in 1 ev : divide joule value with **1.602 x 10<sup>-19</sup>**
+
+## Electromagnetic Spectrum
+- RMI VU XG
+- EMR falls on matter : certain transition takes place.
+- energy level : ground state, excited stage
+
+- **Electronic Energy Levels**
+	- room temperature : molecules are in the lowest energy energy levels E<sub>0</sub>
+	- absorbs UV visible light from EMR, outermost bond/lone-pair electron is promoted to higher energy state (E<sub>1</sub>, E<sub>2</sub>, ... E<sub>n</sub>)
+	- ΔE = hv = E<sub>n</sub> - E<sub>0</sub> where *(n=1,2,3... etc.)*
+	- Electronic fields : 
+		- Rotational electronic fields
+		- Vibrational electronic fields
+	
+	- `ΔE<sub>electronic</sub>` > `ΔE<sub>vibrational</sub>` > `ΔE<sub>rotational</sub>`
