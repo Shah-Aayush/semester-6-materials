@@ -74,4 +74,4 @@
 		- Rotational electronic fields
 		- Vibrational electronic fields
 	
-	- `ΔE<sub>electronic</sub>` > `ΔE<sub>vibrational</sub>` > `ΔE<sub>rotational</sub>`
+	- ΔE<sub>electronic</sub> > ΔE<sub>vibrational</sub> > ΔE<sub>rotational</sub>
