@@ -66,12 +66,67 @@
 - EMR falls on matter : certain transition takes place.
 - energy level : ground state, excited stage
 
-- **Electronic Energy Levels**
-	- room temperature : molecules are in the lowest energy energy levels E<sub>0</sub>
-	- absorbs UV visible light from EMR, outermost bond/lone-pair electron is promoted to higher energy state (E<sub>1</sub>, E<sub>2</sub>, ... E<sub>n</sub>)
-	- ΔE = hv = E<sub>n</sub> - E<sub>0</sub> where *(n=1,2,3... etc.)*
-	- Electronic fields : 
-		- Rotational electronic fields
-		- Vibrational electronic fields
+- ## Interaction of EMR with matter
+	- **1. Electronic Energy Levels**
+		- room temperature : molecules are in the lowest energy energy levels E<sub>0</sub>
+		- absorbs UV visible light from EMR, outermost bond/lone-pair electron is promoted to higher energy state (E<sub>1</sub>, E<sub>2</sub>, ... E<sub>n</sub>)
+		- ΔE = hv = E<sub>n</sub> - E<sub>0</sub> where *(n=1,2,3... etc.)*
+		- Electronic fields : 
+			- Rotational electronic fields
+			- Vibrational electronic fields
+		
+		- ΔE<sub>electronic</sub> > ΔE<sub>vibrational</sub> > ΔE<sub>rotational</sub>
 	
-	- ΔE<sub>electronic</sub> > ΔE<sub>vibrational</sub> > ΔE<sub>rotational</sub>
+	- **2. Vibrational Energy levels**
+		- less energy level than electronic energy level
+		- spacing between energy levels are relatively small
+			- i.e. 0.01 to 10 kcal/mole
+		- IR radiation is absorbed, molecules are *excited : from one vibrational level to another* : or : *vibrates with higher amplitude*
+		
+	- **3. Rotational Energy levels**
+		- these energy levels are `quantized` & `discrete`.
+		- spacing between energy levels are even smaller than vibrational energy levels.
+
+- Gamma waves has highest energy and lowest wavelength
+- Radio waves has lowest energy and highest wavelength
+
+- **R**adio waves
+	- 10<sup>3</sup>
+	- used in Nuclear Magnetic Resonance (NMR), Magnetic Resoance Imaging (MRI)
+- **M**icro waves
+	- 10<sup>-2</sup>
+- **I**nfrared waves
+	- 10<sup>-5</sup>
+	- feel as heat
+- **V**isible waves
+	- 0.5 x 10<sup>-6</sup>
+	- what we see
+	- VIBGYOR : 20-20-50-80-15-35-60
+		- Violet: 400-420 nm
+		- Indigo: 420-440 nm
+		- Blue: 440-490 nm
+		- Green: 490-570 nm
+		- Yellow: 570-585 nm
+		- Orange: 585-620 nm
+		- Red: 620-780 nm
+- **U**V waves
+	- 10<sup>-8</sup>
+	- 190-400 nm
+	- responsible for sunburn
+- **X**-Rays
+	- 10<sup>-10</sup>
+	- less harmful than gamma except in high does.
+- **G**amma waves
+	- 10<sup>-12</sup>
+	- emitted from the nuclei fo some radioactive elements.
+	- can severely damage biological organisms because of high energy.
+	
+## Types of Energy region-wise of Electromagnetic spectrum
+
+| Region of Spectrum | Energy transitions
+|---|---|
+|X-rays|Bond breaking (core level electrons)|
+|UV-Visible|Electronic (valence electrons)|
+|IR|Vibrational (molecular vibrations)|
+|Microwave|Rotational (molecular rotations)|
+|Radio-Frequencies|Nuclear spin (Nuclear Magnetic Resonance) ; Electron spin (Electron Spin Resonance)|
