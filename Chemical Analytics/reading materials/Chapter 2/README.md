@@ -56,4 +56,4 @@
 - f = c/λ
 - 1 erg = 1e-7 joule
 - 1 calorie = 4.18 joule
-- to give answer in mole^{-1} : multiply it with `6.023 x 10^{23}`
+- to give answer in mole<sup>-1</sup> : multiply it with `6.023 x 10<sup>23</sup>`
