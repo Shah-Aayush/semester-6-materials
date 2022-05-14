@@ -45,3 +45,15 @@
 		- emission is dispersed *(split up)* according to some property of the emission
 		- amount dispersion is measured.
 		- i.e. Mass spectroscopy.
+	
+## Problems based on EMR
+	
+- The highest surface part of a wave is called the **crest**, and the lowest part is the **trough**. The vertical distance between the crest and the trough is the **wave height**. The horizontal distance between two adjacent crests or troughs is known as the **wavelength**.
+- EMR : particle + waves
+
+- wavenumber = 1/wavelength
+- E = hc/λ
+- f = c/λ
+- 1 erg = 1e-7 joule
+- 1 calorie = 4.18 joule
+- to give answer in mole^{-1} : multiply it with `6.023 x 10^{23}`
