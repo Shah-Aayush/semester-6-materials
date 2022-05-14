@@ -130,3 +130,41 @@
 |IR|Vibrational (molecular vibrations)|
 |Microwave|Rotational (molecular rotations)|
 |Radio-Frequencies|Nuclear spin (Nuclear Magnetic Resonance) ; Electron spin (Electron Spin Resonance)|
+
+## Absorption laws
+1. Lambert's Law
+	- for UV spectroscopy
+	- interactino of matter with light 
+	- cuvette 
+		- transpert on two sides, opaque on other two sides
+		- made of glass/plastic/quards (cylinder)
+	- monochromatic : single fixed wavelength
+	
+	- beam of `monochromatic` radiation is passed through `homogenous` absorbing solution, the rate of `decrease in the intensity` of radiation is *directly proportional to* the `**thickness**` of the soluition.
+	- A = εl
+		- ε : Molar absorption coefficient (depends upon the nature of absorbing substance)
+		- l : path length 
+		- A : absorbance
+		
+2. Beer's Law
+	- beam of `monochromatic` radiation is passed through `homogenous` absorbing solution, the rate of `decrease in the intensity` of radiation is *directly proportional to* the `**concentration**` of the soluition.
+	- A = εC
+		- C : concentration (moles/litre)
+	
+- Solution is concentrated : amount of solute is more
+- Solution is diluted : amount of solvent is more
+
+- A =  εcl = log<sub>10</sub> (I<sub>0</sub>/I) = - log (T)
+- T = I/I<sub>0</sub>
+
+- Derivation : 
+	- -dI/dx α cI
+
+
+## Auxochrome vs Chromophore
+
+||Auxochrome| Chromophore|
+|---|---|---|
+|Definition|group of atoms that can get attached to a chromophore, thereby increasing the colourfulness of the chromophore|part of a molecule that is responsible for the colour of that molecule|
+|Intensity of colour|increase the colour intensity of chromophore|responsible for colour of a colourless compound|
+|Example|pale yellow coloured nitrobenzene becomes dark yellow coloured when a hydroxyl group is attached to the molecule| colourless benzene gets a pale yellow colour when a nitro group is added to the benzene molecule|
