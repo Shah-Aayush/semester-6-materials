@@ -171,4 +171,46 @@
 		- **power supply remains constant**
 	
 	> ![Types of DCS](./assets/types-of-dsc.png)
+	
+- result of calorimetric measurements is a DSC curve shown as the temperature / time dependence on the heat flux (per time unit)
+	- temperature<sub>tested</sub> < temperature<sub>reference</sub> during phase transformation/reaction, HEAT IS ABSORBED. situation is registered as **ENDOTHERMIC PEAK**.
+	- sample temperature is higher, and there is separation of the heat : **EXOTHERMIC PEAK**.
+	
+- ## DSC Heat flow
+	- dH/dt = Cp DT/dt
+		- dH : DSC heat flow signal
+		- Cp : Sample Heat Capacity
+			- sample specific heat x sample weight
+		- dT/dt : heating rate
+
+	- Heat flows into the sample as a result of either 
+		- heat capacity (heating)
+		- glass transition 
+		- melting
+		- evaporation
+		- other endothermic processes
+	- Heat flows out of the sample as a result of either
+		- heat capacity (cooling)
+		- cystallization
+		- curing
+		- oxidation
+		- other exothermic processes
+	
+- ## Enthalpy of transition
+	- area under the peaks in the curve can be use to calculate the enthalpy of transition
+	- ∆𝐻 = 𝐾𝐴
+		- ∆𝐻 = Change in Enthalpy
+	
+		- K = calorimetric Constant
+		- A = Area under the peak (by integration of peak)
+
+	- Area under the peak is directly proportional to the heat evolved or absorbed in a reaction. 
+	- Height of the peak represents the rate of reaction.
+
+	- DSC measurements can be made in two ways: by measuring the electrical energy provided to heaters below the pans necessary to maintain the two pans at the same temperature (power compensation), or by measuring the heat flow (differential temperature) as a function of sample temperature (heat flux). The DSC ultimately outputs the differential heat flow (heat/time) between your material and the empty reference pan. Heat capacity may be determined by taking the ratio of heat flow to heating rate. Thus,
+	- C<sub>p</sub> = q/∆T
+	- where Cp is the material’s heat capacity, q is the heat flow through the material over a given time, and ∆T is the change in temperature over that same time.
+	
+	> ![](./assets/curves.png)
+	
 # XRD 
