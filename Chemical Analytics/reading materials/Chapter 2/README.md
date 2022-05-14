@@ -30,11 +30,11 @@
 			- UV (185-400 nm) spectroscopy
 			- visible (400-800 nm) spectroscopy
 			- IR (0.76-15 μm) spectroscopy
-		1.1 Atomic Spectroscopy
+		1.1. Atomic Spectroscopy
 			- concerned with the interaction of EMR with Atoms
 			- commonly in lower energy state called grown state
 			- high energy/intensity that it can go upto ATOM.
-		1.2 Molecular Spectroscopy
+		1.2. Molecular Spectroscopy
 			- concerned with the interaction of EMR with Molecule
 				- UV (185-400 nm) spectroscopy
 				- visible (400-800 nm) spectroscopy
