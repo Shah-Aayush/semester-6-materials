@@ -168,3 +168,24 @@
 |Definition|group of atoms that can get attached to a chromophore, thereby increasing the colourfulness of the chromophore|part of a molecule that is responsible for the colour of that molecule|
 |Intensity of colour|increase the colour intensity of chromophore|responsible for colour of a colourless compound|
 |Example|pale yellow coloured nitrobenzene becomes dark yellow coloured when a hydroxyl group is attached to the molecule| colourless benzene gets a pale yellow colour when a nitro group is added to the benzene molecule|
+
+- ## Important applications of UV and Visible Spectroscopy
+	- quantitiative analysis
+		- the metal salt solutions which are coloured and some organic coloured compounds can be easily analyzed quantitatively by using beer lambert's law.
+		- thus we can calculate the concentration of the solution.
+	- identification of functional group
+		- spectrophotometers are the instruments working on the prinicple of λ<sub>max</sub>. 
+		- this λmax is constant for each functional group. 
+		- If we know λmax for the particular sample, we can decide the type of functional group present in it.
+	- distinguish b/w geometrical isomer
+		- each geometrical isomer have its own characteristic λmax therefore from λmax we identify geometrical isomers.
+		- i.e. cinnamic acid exists in cis and trans form.
+	- chemical analysis
+		- with the help of spectrophotometer we can find out the rate constant(k) of any chemical reaction. as we know the first order reaction.
+		- where a is initial concentration and (a-x) is final concentration.
+		- k = (2.303/t) log(a/a-x)
+		- *by taking some ester and keep in the instrument, we can find out the absorbance then with the help of beer-lambert's law we can find out the concentration.*
+	- Determination and estimation of tautomers 
+		- keto and enol form are present in equilibrium which can be determined by spectrophotometer.
+		- acetoacetic ester exists in two tautomeric forms which show different λmax values.
+		
