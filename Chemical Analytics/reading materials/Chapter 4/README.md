@@ -296,14 +296,14 @@
 	
 - ## Applications
 > widely used for 
-	- identification of unknown crystalline materials
-		- e.g. minerals, inorganic compounds
-	- determination of unknown solids
-		- which is critical to studies in geology, environmental science, material science, engineering and biology.
-	- characterization of crystalline materials
-	- identification of fine-grained minerals such as clays and mixed layer clays that are difficult to determine optically
-	- determination of unit cell dimensions
-	- measurement of sample purity
+- identification of unknown crystalline materials
+	- e.g. minerals, inorganic compounds
+- determination of unknown solids
+	- which is critical to studies in geology, environmental science, material science, engineering and biology.
+- characterization of crystalline materials
+- identification of fine-grained minerals such as clays and mixed layer clays that are difficult to determine optically
+- determination of unit cell dimensions
+- measurement of sample purity
 
 - ## Strengths and Limitations of X-ray Powder Diffraction
 	- Strengths
