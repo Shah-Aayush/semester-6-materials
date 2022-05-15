@@ -230,12 +230,12 @@
 	- **phase difference => amplitude changes**
 
 - Crystak structure for X ray diffraction peaks
-|Bravais lattice|Reflection present|Reflection absent|
-|---|---|---|
-|simple|all|none|
-|base centered|h and k unmixed|h and k mixed|
-|body centered|(h+k+l) even|(h+k+l) odd|
-|face centered|h k and l unmixed|h k and l mixed|
+	|Bravais lattice|Reflection present|Reflection absent|
+	|---|---|---|
+	|simple|all|none|
+	|base centered|h and k unmixed|h and k mixed|
+	|body centered|(h+k+l) even|(h+k+l) odd|
+	|face centered|h k and l unmixed|h k and l mixed|
 	
 - why XRD
 	- [SPACING] to measure average spacings b/w layers/rows/atoms
