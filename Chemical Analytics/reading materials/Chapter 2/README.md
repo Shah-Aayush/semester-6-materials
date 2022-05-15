@@ -157,18 +157,52 @@
 - A =  εcl = log<sub>10</sub> (I<sub>0</sub>/I) = - log (T)
 - T = I/I<sub>0</sub>
 
-- Derivation : 
+- ## Derivation of lambert beer's law: 
 	- -dI/dx α cI
-
+	> ![](./assets/lb-1.png)
+	> ![](./assets/lb-2.png)
+	> ![](./assets/lb-3.png)
 
 ## Auxochrome vs Chromophore
 
 ||Auxochrome| Chromophore|
 |---|---|---|
+||Colour enhancing|Colour bearing|
 |Definition|group of atoms that can get attached to a chromophore, thereby increasing the colourfulness of the chromophore|part of a molecule that is responsible for the colour of that molecule|
 |Intensity of colour|increase the colour intensity of chromophore|responsible for colour of a colourless compound|
 |Example|pale yellow coloured nitrobenzene becomes dark yellow coloured when a hydroxyl group is attached to the molecule| colourless benzene gets a pale yellow colour when a nitro group is added to the benzene molecule|
 
+- ## UV Spectrophotometer
+	- ### Instrumentation
+		- light source
+			- deuterium and hydrogen lamps
+				- covers UV : 200-330 nm
+			- W filament lamp
+				- covers v330-700 nm
+			- Xe, C arc lamps
+		- sample containers
+			- cuvettes : plastic, glass, quartz
+				- quartz : transperent/visible
+				- plastic, glass : only visible
+		> ![](uv-1.png)
+		
+		- single beam spectrophotometer
+		> ![](uv-2.png)
+		- double beam spectrophotometer
+		> ![](uv-3.png)
+		
+	- Difference b/w single beam and double beam
+		|single beam |double beam|
+		|---|---|
+		|clibration should be done with blank every time|calibration is done only in the beginning|
+		|measures the total amount of transmitted light reaching the detector|measures the percentage of light absorbed|
+		|not possible to compare blank and sample together|possible to do direct one stemp comparision of sample in one path with standard in the other path|
+		|radiant energy wavelength has to be adjusted every time|scanning can be done over wide wavelength region|
+		|working on this is tedious and time consuming|working on this is fast and non tedious|
+		|adv. : simple in construction, easy to use and economical| rapid scanning over wide λ region. fluctuations due to radiation source are minimised.|
+		|disadv. : fluctuation affects the absorbance. continuous spectrum is not obtained| construction is complicated. expensive instrument.|
+	> 
+	
 - ## Important applications of UV and Visible Spectroscopy
 	- quantitiative analysis
 		- the metal salt solutions which are coloured and some organic coloured compounds can be easily analyzed quantitatively by using beer lambert's law.
