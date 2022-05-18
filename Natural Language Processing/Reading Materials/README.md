@@ -142,7 +142,92 @@
 - ## Basic Text processing
 - ## Stemming
 - ## stemming Porter stemmer 
-- ## POS tagging
+	- A consonant in a word is a letter other than A, E, I, O or U. 
+	- If a letter is not a consonant it is a vowel.
+	- These may all be represented by the single form `[C]VCVC...[V]`
+	- where the square brackets denote arbitrary presence of their contents.
+	- Using (VC)<sup>m</sup> to denote VC repeated m times, this may again be written as [C](VC)<sup>m</sup>[V].
+	- m will be called the measure of any word or word part when represented in this form. The case m = 0 covers the null word. Here are some examples:
+		- m=0 : TR, EE, TREE, Y, BY.
+		- m=1 : TROUBLE, OATS, TREES, IVY.
+		- m=2 : TROUBLES, PRIVATE, OATEN, ORRERY.
+	-  The rules for removing a suffix will be given in the form (condition) S1 -> S2
+		- This means that if a word ends with the suffix S1, and the stem before S1 satisfies the given condition, S1 is replaced by S2. The condition is usually given in terms of m, e.g.
+		- (m > 1) EMENT ->
+		- Here S1 is ‘EMENT’ and S2 is null. This would map REPLACEMENT to REPLAC, since REPLAC is a word part for which m = 2.
+	- The ‘condition’ part may also contain the following:
+		- `*S` : the stem ends with S (and similarly for the other letters).
+		- `*v*` : the stem contains a vowel.
+		- `*d` : the stem ends with a double consonant (e.g. -TT, - SS).
+		- `*o` : : the stem ends cvc, where the second c is not W, X or Y (e.g. -WIL, -HOP).
+	- In a set of rules written beneath each other, only one is obeyed, and this will be the one with the longest matching S1 for the given word. For example, with
+		- SSES -> SS
+		- IES -> I
+		- SS -> SS 
+		- S ->
+		- here the conditions are all null) CARESSES maps to CARESS since SSES is the longest match for S1. Equally CARESS maps to CARESS (S1=‘SS’) and CARES to CARE (S1=‘S’).
+		
+	- **STEPS** : 
+		- **STEP 1** : deals with plurals and past participles. The subsequent steps are much more straightforward.
+			- 1a
+				- `SSES` -> `SS`
+					- caresses -> caress
+				- `IES` -> `I`
+					- ponies -> poni
+				- `SS` -> `SS`
+					- caress -> caress
+				- `S` -> ``
+					- cats -> cat
+			- 1b
+				- (m>0)`EED` -> `EE`
+					- feed -> feed
+					- aggreed -> agree
+				- `(*v*)` `ED` -> ``
+					- plastered - plaster
+					- bled -> bled
+				- `(*v*)` `ING` -> ``
+					- motoring -> motor
+					- sing -> sing
+		- **STEP 2**
+			- (m>0) `ATIONAL` -> `ATE`
+				- relational -> relate
+			- (m>0) `TIONAL` -> `TION`
+				- conditional -> condition
+			- (m>0) `ENCI` -> `ENCE`
+				- valenci -> valence
+			- (m>0) `IZER` -> `IZE`
+				- digitizer -> digitize
+			- (m>0) `ABLI` -> `ABLE`
+				- conformabli -> conformable
+		- **STEP 3**
+			- (m>0) `ATIVE`, `FUL`, `NESS` -> ``
+				- formative -> form
+				- hopeful -> hope
+				- goodness -> good
+			- (m>0) `ICATE` -> `IC`
+				- triplicate -> triplic
+			- (m>0) `ALIZE` -> `AL`
+				- formalize -> formal
+			- (m>0) `ICITI` -> `IC`
+				- electriciti -> electric
+			- (m>0) `ICAL` -> `IC`
+				- electrical -> electric
+		- **STEP 4**
+			- (m>1) `AL`, `ANCE`, `ENCE`, `ER`, `IC`, `ABLE`, `IBLE`, `ANT`, `EMENT`, `MENT`, `ENT`, `OU`, `ISM`, `ATE`, `ITI` -> ``
+				- revival -> reviv
+				- allowance -> allow
+				- inference -> infer
+				- airliner -> airlin
+				- activate -> activ
+		- **STEP 5** 
+			- (m>1) `E` -> ``
+				- probate -> probat
+				- rate -> rate
+			- (m=1 and not `*o`) `E` -> ``
+				- cease -> ceas
+					
+		
+ - ## POS tagging
 - ## Word representation 
 - ## one hot encoding
 - ## Distributional representation
