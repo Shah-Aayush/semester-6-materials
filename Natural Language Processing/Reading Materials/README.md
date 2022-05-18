@@ -2,33 +2,210 @@
  > *(topics covered 😳)*
 
 
-- Introduction to NLP
-- Applications of NLP
-- Tasks of NLP
-- NLP Challenges
-- Hard and easy problems of NLP
-- Text processing 
-- Regular expression
-- Regular expression substitution 
-- A chatbot (Eliza)
-- Words and corpora
-- Basic Text processing
-- Stemming
-- stemming Porter stemmer 
-- POS tagging
-- Word representation 
-- one hot encoding
-- Distributional representation
-- basics of CBOW, GLOVE and Skip gram
-- IR model
-- Boolean model
-- Vector space model
-- Word sense disambiguation 
-- Lesk algorithm for word sense disambiguation 
-- Concept of lexical analysis,syntax analysis and semantic analysis 
-- NLP and Deep learning
-- Sequence learning problems
-- Concept of Selective Read, write and erase 
-- RNN,LSTM and GRU
-- Text classification
-- Examples of Text classification
+- ## Introduction to NLP
+	- Natural Language Processing, or NLP is a subfield of Artificial Intelligence research that is focused on developing models and points of interaction between humans and computers based on natural language. This includes text, but also speech-based systems.
+	- Computer scientists and researchers have been studying this topic for entire decades, but only recently has it become a hot topic again, a situation made possible by recent breakthroughs in the research community.
+	- The ultimate goal of NLP is to help computers understand language as well as we do. It is the driving force behind things like virtual assistants, speech recognition, sentiment analysis, automatic text summarization, machine translation and much more.
+	-  Applications of NLP techniques include voice assistants like Amazon's Alexa and Apple's Siri, but also things like machine translation and text-filtering.
+	> How Natural Language Processing works
+		- *A generally accepted truth in computer science is that every complex problem becomes easier to solve if we break it into smaller pieces. That is especially true in the Artificial Intelligence field. For a given problem, we build several small, highly specialized components that are good at solving one and only one problem. We then align all this components, we pass our input through each component and we get our output at the end of the line. This is what we call a pipeline.*
+		- *In the NLP context, a basic problem would be that for a given paragraph, the computer understands exactly the meaning of it and then possibly it acts accordingly. For this to work, we need to go through a few steps.*
+- ## [Applications of NLP](https://monkeylearn.com/blog/natural-language-processing-applications/)
+	- Sentiment Analysis
+	- Text Classification
+	- Text Summarization
+	- Text Extraction
+	- Chatbots & Virtual Assistants
+	- Machine Translation
+	- Market Intelligence
+	- Auto-Correct
+	- Intent Classification
+	- Urgency Detection
+	- Speech Recognition
+	
+- ## [Tasks of NLP](https://monkeylearn.com/natural-language-processing/#:~:text=Common%20NLP%20Tasks%20%26%20Techniques)
+	- Syntactic analysis *(parsing or syntax analysis)*
+	- Semantic analysis
+	- Tokenization
+	- Part-of-speech tagging
+	- Dependency Parsing
+	- Constituency Parsing
+	- Lemmatization & Stemming
+	- Stopword Removal
+	- Word Sense Disambiguation
+	- Named Entity Recognition (NER)
+	
+- ## [NLP Challenges](https://www.analyticsinsight.net/10-major-challenges-of-using-natural-language-processing/)
+	- Development Time
+	- Phrasing Ambiguities
+	- Misspellings
+	- Language Differences
+	- Training Data
+	- Innate Biases
+	- Words with Multiple Meanings
+	- Phrases with Multiple Intentions
+	- Keeping a Conversation Moving
+	
+- ## Hard and easy problems of NLP
+	- Hard : 
+		- Contextual words and phrases and homonyms.
+		- Synonyms.
+		- Irony and sarcasm.
+		- Ambiguity.
+		- Errors in text or speech.
+		- Colloquialisms and slang.
+		- Domain-specific language.
+	- Easy : 
+		- *?*
+- ## Language Model
+	- [**refer PDF**](./PDFs%20only/Language%20Models.pdf)
+	- perplexity
+		- The best language model is one that best predicts an unseen test set
+			- Gives the highest P(sentence)
+		- Perplexity is the inverse probability of the test set, normalized by the number of words
+		- PP(W) = P(w<sub>1</sub>,w<sub>2</sub>,...,w<sub>N</sub>)<sup>−N1</sup>
+		- similarly applied from bigrams and chain rules
+		- Minimizing perplexity is the same as maximizing probability
+		- Lower perplexity = better model
+	- The Shannon Visualization Method
+		- Choose a random bigram
+		- (<s>, w) according to its probability
+		- Now choose a random bigram (w, x) according to its probability
+		- And so on until we choose </s> Then string the words together
+		- <s> I | I want | want to | to eat | eat Chinese | Chinese food | food  </s> | 
+		> I want to eat Chinese food
+		
+	- The perils *(danger)* of overfitting
+		- N-grams only work well for word prediction if the test corpus looks like the training corpus
+		- In real life, it often doesn’t
+		- We need to train robust models that generalize! 
+		- One kind of generalization: Zeros!
+		- Things that don’t ever occur in the training set 
+		- But occur in the test set
+		- Zero probability bigrams
+			- Bigrams with zero probability
+			- mean that we will assign 0 probability to the test set!
+			- And hence we cannot compute perplexity (can’t divide by 0)!
+	- Backoff and Interpolation
+		- Sometimes it helps to use less context
+		-  Condition on less context for contexts you haven’t learned much about
+		-  Backoff:
+			-  use trigram if you have good evidence, 
+			-  otherwise bigram,otherwise unigram
+		-  Interpolation:
+			-  mix unigram,bigram,trigram
+			-  Interpolation works better
+	- Unknown words: Open versus closed vocabulary tasks
+		-  If we know all the words in advanced
+			-  Vocabulary V is fixed
+			-  Closed vocabulary task
+		-  Often we don’t know this
+			-  Out Of Vocabulary = OOV words
+			-  Open vocabulary task
+		-  Instead: create an unknown word token <UNK>
+			-  Training of <UNK> probabilities
+				-  Create a fixed lexicon L of size V
+				-  At text normalization phase, any training word not in L changed to <UNK>
+				-  Now we train its probabilities like a normal word
+			-  At decoding time
+				-  If text input: Use UNK probabilities for any word not in training
+	- Huge web-scale n-grams
+		-  How to deal with, e.g., Google N-gram corpus 		
+		-  Pruning
+			-  Only store N-grams with `count>threshold`.
+			-  Remove singletons of higher-order n-grams
+			-  Entropy-based pruning
+		-  Efficiency
+			-  Efficient data structures like tries
+			-  Bloom filters:approximate language models 		
+			-  Store words as indexes,not strings
+			-  Use Huffman codingt of it large numbers of words into two bytes 
+			-  Quantize probabilities(4-8 bits instead of 8-byte float)
+	- Stupid backoff
+		- no discounting just use relative frequencies
+		- ![](./assets/stupid_backoff.png)
+	- N-gram Smoothing Summary
+		-  Add-1 smoothing:
+		-  OK for text categorization, not for language modeling
+		-  The most commonly used method: 		
+			-  Extended Interpolated Kneser-Ney
+		-  For very large N-grams like the Web: 		
+			-  Stupid backoff
+	- Kneser-Ney Smoothing
+		- *refer PDF*
+	
+- ## Text processing 
+- ## Regular expression
+- ## Regular expression substitution 
+- ## A chatbot (Eliza)
+- ## Words and corpora
+- ## Basic Text processing
+- ## Stemming
+- ## stemming Porter stemmer 
+- ## POS tagging
+- ## Word representation 
+- ## one hot encoding
+- ## Distributional representation
+- ## basics of CBOW, GLOVE and Skip gram
+	- [***refer PDF***](./PDFs%20 only/Continuous%20bag%20of%20words%20model.pdf)
+	- ### Continous Bag Of Words (CBOW)
+		- count based models uses co-occurrence counts of words
+		- (direct) prediction based models directly learn word representations
+		- task : predict n-th word given previous n-1 words
+		- example : he sat on a chair
+		- training data : 
+			- all n-word windows in the corpus
+			- training data for this task is easily available (can take all n word from wikipedia)
+			- for ease of illustration, we will first focus on the case when n=2, (i.e. predict second word based on first word)
+		- we will model this problem using feed forward neural network
+		- input : one hot representation of the context word
+		- output : V words possible and we want to predict probability distribution over V classes
+		- some problems : 
+			- softmax functino at the output is computatioally very expensive
+			- denominator requires a summation over all words in the vocabulary 
+		
+		- CBOW : predicts output word / given bag of context words
+		- SKIP gram : predicts output contexts / given word
+		- Glove representation : 
+			- count based method (SVD) rely on global co-occurrence counts from the corpus for computing word representations
+			- predicts based methods learn word representations using co-occurrence information
+- ## IR model
+- ## Boolean model
+	- Simple model based on set theory
+	- Queries and documents specified as boolean expressions 		-  precise semantics
+	- E.g.,q=ka ∧ (kb ∨ ¬kc)
+	- Terms are either present or absent. Thus, wij e {0,1}
+	- Drawback of boolean model
+		- Expressive power of boolean expressions to capture information need and document semantics inadequate
+		- Retrieval based on binary decision criteria (with no partial match) does not reflect our intuitions behind relevance adequately
+	- As a result
+		- Answer set contains either too few or too many documents in response to a user query
+		- No ranking of documents
+- ## Vector space model
+		-  Task:
+			-  Document collection
+			-  Query specifies information need: free text
+			-  Relevance judgments: depends upon the weighting scheme for all docs
+		-  Word evidence: Bag of words 		
+			-  No ordering information
+		-  Represent documents and queries as 		
+			-  Vectors of term-based features
+				-  Features: tied to occurrence of terms in collection
+		-  Solution 1: Binary features: t=1 if presence, 0 otherwise
+			-  Similarity: number of terms in common 		
+				-  Dot product
+- ## Word sense disambiguation 
+- ## Lesk algorithm for word sense disambiguation 
+- ## Concept of lexical analysis,syntax analysis and semantic analysis 
+- ## NLP and Deep learning
+- ## Sequence learning problems
+- ## Concept of Selective Read, write and erase 
+- ## RNN,LSTM and GRU
+- ## Text classification
+- ## Examples of Text classification
+---
+
+- ## List of PDFs
+	- CBOW
+	- Language models
+	- [Hard] NLP Model 
