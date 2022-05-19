@@ -135,12 +135,64 @@
 		- *refer PDF*
 	
 - ## Text processing 
+	- Data Preprocessing is the most essential step for any Machine Learning model. How well the raw data has been cleaned and preprocessed plays a major role in the performance of the model. Likewise in the case of NLP, the very first step is Text Processing.
+
+
+	- The various preprocessing steps that are involved are :
+
+		- Lower Casing
+		- Tokenization
+		- Punctuation Mark Removal
+		- Stop Word Removal
+		- Stemming
+		- Lemmatization
 - ## Regular expression
+
+
+	- A regular expression (RE) is a language for specifying text search strings. RE helps us to match or find other strings or sets of strings, using a specialized syntax held in a pattern. Regular expressions are used to search texts in UNIX as well as in MS WORD in identical way.
+	- RE is a formula in a special language, which can be used for specifying simple classes of strings, a sequence of symbols. In other words, we can say that RE is an algebraic notation for characterizing a set of strings.
+	- Regular expression requires two things, one is the pattern that we wish to search and other is a corpus of text from which we need to search.
+	- Regular Sets & Their Properties
+		- It may be defined as the set that represents the value of the regular expression and consists specific properties.
+		
+		- Properties of regular sets
+			- If we do the union of two regular sets then the resulting set would also be regula.
+		
+			- If we do the intersection of two regular sets then the resulting set would also be regular.
+		
+			- If we do the complement of regular sets, then the resulting set would also be regular.
+		
+			- If we do the difference of two regular sets, then the resulting set would also be regular.
+		
+			- If we do the reversal of regular sets, then the resulting set would also be regular.
+		
+			- If we take the closure of regular sets, then the resulting set would also be regular.
+		
+			- If we do the concatenation of two regular sets, then the resulting set would also be regular.
 - ## Regular expression substitution 
+	- Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters.
+	- replacement patterns are provided to overloads of the Regex.Replace method that have a replacement parameter and to the Match.Result method. The methods replace the matched pattern with the pattern that is defined by the replacement parameter.
+	
 - ## A chatbot (Eliza)
+	- ELIZA was the very first chatbot as mentioned above. It was created by Joseph Weizenbaum in 1966 and it uses pattern matching and substitution methodology to simulate conversation. The program was designed in a way that it mimics human conversation.
+	- In 1966, he developed the program ELIZA, which aimed at tricking it users by making them believe that they were having a conversation with a real human being. ELIZA was designed to imitate a therapist who would ask open-ended questions and even respond with follow-ups.
+	- It was also an early test case for the Turing Test, a test of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.
 - ## Words and corpora
+	- A corpus is a large and structured set of machine-readable texts that have been produced in a natural communicative setting. Its plural is corpora. They can be derived in different ways like text that was originally electronic, transcripts of spoken language and optical character recognition, etc.
+
 - ## Basic Text processing
+	- tokenization
+	- stop words removal
+	- lower case conversion
+	- punctuations removal
 - ## Stemming
+	- Stemming is the process of reducing a word to its word stem that affixes to suffixes and prefixes or to the roots of words known as a lemma. Stemming is important in natural language understanding (NLU) and natural language processing (NLP).
+	- Stemming is a part of linguistic studies in morphology and artificial intelligence (AI) information retrieval and extraction. Stemming and AI knowledge extract meaningful information from vast sources like big data or the Internet since additional forms of a word related to a subject may need to be searched to get the best results. Stemming is also a part of queries and Internet search engines.
+
+	- Recognizing, searching and retrieving more forms of words returns more results. When a form of a word is recognized it can make it possible to return search results that otherwise might have been missed. That additional information retrieved is why stemming is integral to search queries and information retrieval.
+
+
+
 - ## stemming Porter stemmer 
 	- A consonant in a word is a letter other than A, E, I, O or U. 
 	- If a letter is not a consonant it is a vowel.
@@ -227,8 +279,10 @@
 				- cease -> ceas
 					
 		
- - ## POS tagging
+- ## POS tagging
+	- It is a process of converting a sentence to forms – list of words, list of tuples (where each tuple is having a form (word, tag)). The tag in case of is a part-of-speech tag, and signifies whether the word is a noun, adjective, verb, and so on.
 - ## Word representation 
+	- Word representation, aiming to represent a word with a vector, plays an essential role in NLP.
 - ## one hot encoding
 - ## Distributional representation
 - ## basics of CBOW, GLOVE and Skip gram
@@ -280,14 +334,108 @@
 			-  Similarity: number of terms in common 		
 				-  Dot product
 - ## Word sense disambiguation 
+	- We understand that words have different meanings based on the context of its usage in the sentence. If we talk about human languages, then they are ambiguous too because many words can be interpreted in multiple ways depending upon the context of their occurrence.
+
+	- Word sense disambiguation, in natural language processing (NLP), may be defined as the ability to determine which meaning of word is activated by the use of word in a particular context. Lexical ambiguity, syntactic or semantic, is one of the very first problem that any NLP system faces. Part-of-speech (POS) taggers with high level of accuracy can solve Word’s syntactic ambiguity. On the other hand, the problem of resolving semantic ambiguity is called WSD (word sense disambiguation). Resolving semantic ambiguity is harder than resolving syntactic ambiguity.
+	
+	- For example, consider the two examples of the distinct sense that exist for the word “bass” −
+	
+		- I can hear bass sound.
+	
+		- He likes to eat grilled bass.
+	
+	- The occurrence of the word bass clearly denotes the distinct meaning. In first sentence, it means frequency and in second, it means fish. Hence, if it would be disambiguated by WSD then the correct meaning to the above sentences can be assigned as follows −
+	
+		- I can hear bass/frequency sound.
+	
+		- He likes to eat grilled bass/fish.
+	
+	- Evaluation of WSD
+		- The evaluation of WSD requires the following two inputs −
+	
+	- A Dictionary
+		- The very first input for evaluation of WSD is dictionary, which is used to specify the senses to be disambiguated.
+	
+	- Test Corpus
+		- Another input required by WSD is the high-annotated test corpus that has the target or correct-senses. The test corpora can be of two types &minsu;
+	
+		- Lexical sample − This kind of corpora is used in the system, where it is required to disambiguate a small sample of words.
+	
+		- All-words − This kind of corpora is used in the system, where it is expected to disambiguate all the words in a piece of running text.
+		
 - ## Lesk algorithm for word sense disambiguation 
+	- seminal dictionary based method
+	- The Lesk algorithm is based on the idea that words in a given region of the text will have a similar meaning. In the Simplified Lesk Algorithm, the correct meaning of each word context is found by getting the sense which overlaps the most among the given context and its dictionary meaning.
+	- As the name suggests, for disambiguation, these methods primarily rely on dictionaries, treasures and lexical knowledge base. They do not use corpora evidences for disambiguation. The Lesk method is the seminal dictionary-based method introduced by Michael Lesk in 1986. The Lesk definition, on which the Lesk algorithm is based is “measure overlap between sense definitions for all words in context”. However, in 2000, Kilgarriff and Rosensweig gave the simplified Lesk definition as “measure overlap between sense definitions of word and current context”, which further means identify the correct sense for one word at a time. Here the current context is the set of words in surrounding sentence or paragraph.
+
+
 - ## Concept of lexical analysis,syntax analysis and semantic analysis 
+	- Lexical Analysis − It involves identifying and analyzing the structure of words. Lexicon of a language means the collection of words and phrases in a language. Lexical analysis is dividing the whole chunk of txt into paragraphs, sentences, and words.
+	- Syntactic Analysis (Parsing) − It involves analysis of words in the sentence for grammar and arranging words in a manner that shows the relationship among the words. The sentence such as “The school goes to boy” is rejected by English syntactic analyzer.
+	- Semantic Analysis − It draws the exact meaning or the dictionary meaning from the text. The text is checked for meaningfulness. It is done by mapping syntactic structures and objects in the task domain. The semantic analyzer disregards sentence such as “hot ice-cream”.
+	- `lexical analysis` -> `syntactic analysis` -> `semantic analysis` -> `disclosure integration` -> `pragmatic analysis`
+
+
+	- The main difference between syntax analysis and semantic analysis is that syntax analysis takes the tokens generated by the lexical analysis and generates a parse tree while semantic analysis checks whether the parse tree generated by syntax analysis follows the rules of the language
+	- syntax analysis
+		- Syntactic analysis or parsing or syntax analysis is the third phase of NLP. The purpose of this phase is to draw exact meaning, or you can say dictionary meaning from the text. Syntax analysis checks the text for meaningfulness comparing to the rules of formal grammar. For example, the sentence like “hot ice-cream” would be rejected by semantic analyzer.
+
+		- In this sense, syntactic analysis or parsing may be defined as the process of analyzing the strings of symbols in natural language conforming to the rules of formal grammar. The origin of the word ‘parsing’ is from Latin word ‘pars’ which means ‘part’.
+		
+		- Concept of Parser
+			- It is used to implement the task of parsing. It may be defined as the software component designed for taking input data (text) and giving structural representation of the input after checking for correct syntax as per formal grammar. It also builds a data structure generally in the form of parse tree or abstract syntax tree or other hierarchical structure.
+		
+		- The main roles of the parse include :
+			- To report any syntax error.
+			- To recover from commonly occurring error so that the processing of the remainder of program can be continued.
+			- To create parse tree.
+			- To create symbol table.
+			- To produce intermediate representations (IR).
+		
+	- semantic analysis
+		- The purpose of semantic analysis is to draw exact meaning, or you can say dictionary meaning from the text. The work of semantic analyzer is to check the text for meaningfulness.
+		
+		- We already know that lexical analysis also deals with the meaning of the words, then how is semantic analysis different from lexical analysis? Lexical analysis is based on smaller token but on the other side semantic analysis focuses on larger chunks. That is why semantic analysis can be divided into the following two parts −
+		
+		- Studying meaning of individual word
+			- It is the first part of the semantic analysis in which the study of the meaning of individual words is performed. This part is called lexical semantics.
+		
+		- Studying the combination of individual words
+			- In the second part, the individual words will be combined to provide meaning in sentences.
+		
+		- The most important task of semantic analysis is to get the proper meaning of the sentence. For example, analyze the sentence “Ram is great.” In this sentence, the speaker is talking either about Lord Ram or about a person whose name is Ram. That is why the job, to get the proper meaning of the sentence, of semantic analyzer is important.
+		
 - ## NLP and Deep learning
+	- In recent years, a variety of deep learning models have been applied to natural language processing (NLP) to improve, accelerate, and automate the text analytics functions and NLP features. Moreover, these models and methods are offering superior solutions to convert unstructured text into valuable data and insights.
+	- The use of neutral networks for NLP did not start until the early 2000s. But by the end of 2010s, neural networks transformed NLP , enhancing or even replacing earlier techniques. This has been made possible because we now have more data to train neural network models and more powerful computing systems to do so.
+	- [Applications](https://blog.paperspace.com/6-interesting-deep-learning-applications-for-nlp/)
+		- 1. Tokenization and Text Classification
+		- 2. Generating Captions for Images
+		- 3. Speech Recognition
+		- 4. Machine Translation
+		- 5. Question Answering (QA)
+		- 6. Document Summarization
+
 - ## Sequence learning problems
 - ## Concept of Selective Read, write and erase 
 - ## RNN,LSTM and GRU
 - ## Text classification
+	- Text classification also known as text tagging or text categorization is the process of categorizing text into organized groups. By using Natural Language Processing (NLP), text classifiers can automatically analyze text and then assign a set of pre-defined tags or categories based on its content.
+	- Text classification is becoming an increasingly important part of businesses as it allows to easily get insights from data and automate business processes. Some of the most common examples and use cases for automatic text classification include the following:
+
+		- Sentiment Analysis: the process of understanding if a given text is talking positively or negatively about a given subject (e.g. for brand monitoring purposes).
+		
+		- Topic Detection: the task of identifying the theme or topic of a piece of text (e.g. know if a product review is about Ease of Use, Customer Support, or Pricing when analyzing customer feedback).
+		
+		- Language Detection: the procedure of detecting the language of a given text (e.g. know if an incoming support ticket is written in English or Spanish for automatically routing tickets to the appropriate team).
+		
 - ## Examples of Text classification
+	- Some examples of text classification are:
+	- Understanding audience sentiment from social media,
+	- Detection of spam and non-spam emails,
+	- Auto tagging of customer queries, and.
+	- Categorization of news articles into defined topics.
+	
 ---
 
 - ## List of PDFs

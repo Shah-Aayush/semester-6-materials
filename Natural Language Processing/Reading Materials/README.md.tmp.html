@@ -19,16 +19,68 @@
 <li><em>In the NLP context, a basic problem would be that for a given paragraph, the computer understands exactly the meaning of it and then possibly it acts accordingly. For this to work, we need to go through a few steps.</em></li>
 </ul></li>
 </ul></li>
-<li>## Applications of NLP</p>
-
-<h2><ul></h2>
-
-<p></ul></li>
-<li>## Tasks of NLP</li>
-<li>## NLP Challenges</li>
-<li>## Hard and easy problems of NLP</li>
-<li><h2>Language Model</h2></p>
+<li><h2><a href="https://monkeylearn.com/blog/natural-language-processing-applications/">Applications of NLP</a></h2></p>
 </blockquote>
+
+<ul>
+<li>Sentiment Analysis</li>
+<li>Text Classification</li>
+<li>Text Summarization</li>
+<li>Text Extraction</li>
+<li>Chatbots &amp; Virtual Assistants</li>
+<li>Machine Translation</li>
+<li>Market Intelligence</li>
+<li>Auto-Correct</li>
+<li>Intent Classification</li>
+<li>Urgency Detection</li>
+<li>Speech Recognition</li>
+</ul></li>
+<li><h2><a href="https://monkeylearn.com/natural-language-processing/#:~:text=Common%20NLP%20Tasks%20%26%20Techniques">Tasks of NLP</a></h2>
+
+<ul>
+<li>Syntactic analysis <em>(parsing or syntax analysis)</em></li>
+<li>Semantic analysis</li>
+<li>Tokenization</li>
+<li>Part-of-speech tagging</li>
+<li>Dependency Parsing</li>
+<li>Constituency Parsing</li>
+<li>Lemmatization &amp; Stemming</li>
+<li>Stopword Removal</li>
+<li>Word Sense Disambiguation</li>
+<li>Named Entity Recognition (NER)</li>
+</ul></li>
+<li><h2><a href="https://www.analyticsinsight.net/10-major-challenges-of-using-natural-language-processing/">NLP Challenges</a></h2>
+
+<ul>
+<li>Development Time</li>
+<li>Phrasing Ambiguities</li>
+<li>Misspellings</li>
+<li>Language Differences</li>
+<li>Training Data</li>
+<li>Innate Biases</li>
+<li>Words with Multiple Meanings</li>
+<li>Phrases with Multiple Intentions</li>
+<li>Keeping a Conversation Moving</li>
+</ul></li>
+<li><h2>Hard and easy problems of NLP</h2>
+
+<ul>
+<li>Hard : 
+<ul>
+<li>Contextual words and phrases and homonyms.</li>
+<li>Synonyms.</li>
+<li>Irony and sarcasm.</li>
+<li>Ambiguity.</li>
+<li>Errors in text or speech.</li>
+<li>Colloquialisms and slang.</li>
+<li>Domain-specific language.</li>
+</ul></li>
+<li>Easy : 
+<ul>
+<li><em>?</em></li>
+</ul></li>
+</ul></li>
+<li><h2>Language Model</h2>
 
 <ul>
 <li><a href="./PDFs%20only/Language%20Models.pdf"><strong>refer PDF</strong></a></li>
@@ -161,8 +213,159 @@
 <li>## Words and corpora</li>
 <li>## Basic Text processing</li>
 <li>## Stemming</li>
-<li>## stemming Porter stemmer </li>
-<li>## POS tagging</li>
+<li><h2>stemming Porter stemmer</h2>
+
+<ul>
+<li>A consonant in a word is a letter other than A, E, I, O or U. </li>
+<li>If a letter is not a consonant it is a vowel.</li>
+<li>These may all be represented by the single form <code>[C]VCVC...[V]</code></li>
+<li>where the square brackets denote arbitrary presence of their contents.</li>
+<li>Using (VC)<sup>m</sup> to denote VC repeated m times, this may again be written as <a href="VC">C</a><sup>m</sup>[V].</li>
+<li>m will be called the measure of any word or word part when represented in this form. The case m = 0 covers the null word. Here are some examples:
+<ul>
+<li>m=0 : TR, EE, TREE, Y, BY.</li>
+<li>m=1 : TROUBLE, OATS, TREES, IVY.</li>
+<li>m=2 : TROUBLES, PRIVATE, OATEN, ORRERY.</li>
+</ul></li>
+<li>The rules for removing a suffix will be given in the form (condition) S1 -> S2
+<ul>
+<li>This means that if a word ends with the suffix S1, and the stem before S1 satisfies the given condition, S1 is replaced by S2. The condition is usually given in terms of m, e.g.</li>
+<li>(m > 1) EMENT -></li>
+<li>Here S1 is ‘EMENT’ and S2 is null. This would map REPLACEMENT to REPLAC, since REPLAC is a word part for which m = 2.</li>
+</ul></li>
+<li>The ‘condition’ part may also contain the following:
+<ul>
+<li><code>*S</code> : the stem ends with S (and similarly for the other letters).</li>
+<li><code>*v*</code> : the stem contains a vowel.</li>
+<li><code>*d</code> : the stem ends with a double consonant (e.g. -TT, - SS).</li>
+<li><code>*o</code> : : the stem ends cvc, where the second c is not W, X or Y (e.g. -WIL, -HOP).</li>
+</ul></li>
+<li><p>In a set of rules written beneath each other, only one is obeyed, and this will be the one with the longest matching S1 for the given word. For example, with</p>
+
+<ul>
+<li>SSES -> SS</li>
+<li>IES -> I</li>
+<li>SS -> SS </li>
+<li>S -></li>
+<li>here the conditions are all null) CARESSES maps to CARESS since SSES is the longest match for S1. Equally CARESS maps to CARESS (S1=‘SS’) and CARES to CARE (S1=‘S’).</li>
+</ul></li>
+<li><p><strong>STEPS</strong> : </p>
+
+<ul>
+<li><strong>STEP 1</strong> : deals with plurals and past participles. The subsequent steps are much more straightforward.
+<ul>
+<li>1a
+<ul>
+<li><code>SSES</code> -> <code>SS</code>
+<ul>
+<li>caresses -> caress</li>
+</ul></li>
+<li><code>IES</code> -> <code>I</code>
+<ul>
+<li>ponies -> poni</li>
+</ul></li>
+<li><code>SS</code> -> <code>SS</code>
+<ul>
+<li>caress -> caress</li>
+</ul></li>
+<li><code>S</code> -> ``
+<ul>
+<li>cats -> cat</li>
+</ul></li>
+</ul></li>
+<li>1b
+<ul>
+<li>(m>0)<code>EED</code> -> <code>EE</code>
+<ul>
+<li>feed -> feed</li>
+<li>aggreed -> agree</li>
+</ul></li>
+<li><code>(*v*)</code> <code>ED</code> -> <code>
+&lt;ul&gt;
+&lt;li&gt;plastered - plaster&lt;/li&gt;
+&lt;li&gt;bled -&gt; bled&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(*v*)&lt;/code&gt; &lt;code&gt;ING&lt;/code&gt; -&gt;</code>
+<ul>
+<li>motoring -> motor</li>
+<li>sing -> sing</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><strong>STEP 2</strong>
+<ul>
+<li>(m>0) <code>ATIONAL</code> -> <code>ATE</code>
+<ul>
+<li>relational -> relate</li>
+</ul></li>
+<li>(m>0) <code>TIONAL</code> -> <code>TION</code>
+<ul>
+<li>conditional -> condition</li>
+</ul></li>
+<li>(m>0) <code>ENCI</code> -> <code>ENCE</code>
+<ul>
+<li>valenci -> valence</li>
+</ul></li>
+<li>(m>0) <code>IZER</code> -> <code>IZE</code>
+<ul>
+<li>digitizer -> digitize</li>
+</ul></li>
+<li>(m>0) <code>ABLI</code> -> <code>ABLE</code>
+<ul>
+<li>conformabli -> conformable</li>
+</ul></li>
+</ul></li>
+<li><strong>STEP 3</strong>
+<ul>
+<li>(m>0) <code>ATIVE</code>, <code>FUL</code>, <code>NESS</code> -> ``
+<ul>
+<li>formative -> form</li>
+<li>hopeful -> hope</li>
+<li>goodness -> good</li>
+</ul></li>
+<li>(m>0) <code>ICATE</code> -> <code>IC</code>
+<ul>
+<li>triplicate -> triplic</li>
+</ul></li>
+<li>(m>0) <code>ALIZE</code> -> <code>AL</code>
+<ul>
+<li>formalize -> formal</li>
+</ul></li>
+<li>(m>0) <code>ICITI</code> -> <code>IC</code>
+<ul>
+<li>electriciti -> electric</li>
+</ul></li>
+<li>(m>0) <code>ICAL</code> -> <code>IC</code>
+<ul>
+<li>electrical -> electric</li>
+</ul></li>
+</ul></li>
+<li><strong>STEP 4</strong>
+<ul>
+<li>(m>1) <code>AL</code>, <code>ANCE</code>, <code>ENCE</code>, <code>ER</code>, <code>IC</code>, <code>ABLE</code>, <code>IBLE</code>, <code>ANT</code>, <code>EMENT</code>, <code>MENT</code>, <code>ENT</code>, <code>OU</code>, <code>ISM</code>, <code>ATE</code>, <code>ITI</code> -> ``
+<ul>
+<li>revival -> reviv</li>
+<li>allowance -> allow</li>
+<li>inference -> infer</li>
+<li>airliner -> airlin</li>
+<li>activate -> activ</li>
+</ul></li>
+</ul></li>
+<li><strong>STEP 5</strong> 
+<ul>
+<li>(m>1) <code>E</code> -> <code>
+&lt;ul&gt;
+&lt;li&gt;probate -&gt; probat&lt;/li&gt;
+&lt;li&gt;rate -&gt; rate&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;(m=1 and not &lt;code&gt;*o&lt;/code&gt;) &lt;code&gt;E&lt;/code&gt; -&gt;</code>
+<ul>
+<li>cease -> ceas</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><h2>POS tagging</h2></li>
 <li>## Word representation </li>
 <li>## one hot encoding</li>
 <li>## Distributional representation</li>
@@ -202,15 +405,144 @@
 </ul></li>
 </ul></li>
 <li>## IR model</li>
-<li>## Boolean model</li>
-<li>## Vector space model</li>
-<li>## Word sense disambiguation </li>
-<li>## Lesk algorithm for word sense disambiguation </li>
-<li>## Concept of lexical analysis,syntax analysis and semantic analysis </li>
-<li>## NLP and Deep learning</li>
-<li>## Sequence learning problems</li>
+<li>## Boolean model
+<ul>
+<li>Simple model based on set theory</li>
+<li>Queries and documents specified as boolean expressions        -  precise semantics</li>
+<li>E.g.,q=ka ∧ (kb ∨ ¬kc)</li>
+<li>Terms are either present or absent. Thus, wij e {0,1}</li>
+<li>Drawback of boolean model
+<ul>
+<li>Expressive power of boolean expressions to capture information need and document semantics inadequate</li>
+<li>Retrieval based on binary decision criteria (with no partial match) does not reflect our intuitions behind relevance adequately</li>
+</ul></li>
+<li>As a result
+<ul>
+<li>Answer set contains either too few or too many documents in response to a user query</li>
+<li>No ranking of documents</li>
+</ul></li>
+</ul></li>
+<li>## Vector space model
+    -  Task:
+        -  Document collection
+        -  Query specifies information need: free text
+        -  Relevance judgments: depends upon the weighting scheme for all docs
+    -  Word evidence: Bag of words <br />
+        -  No ordering information
+    -  Represent documents and queries as <br />
+        -  Vectors of term-based features
+            -  Features: tied to occurrence of terms in collection
+    -  Solution 1: Binary features: t=1 if presence, 0 otherwise
+        -  Similarity: number of terms in common <br />
+            -  Dot product</li>
+<li><h2>Word sense disambiguation</h2>
+
+<ul>
+<li><p>We understand that words have different meanings based on the context of its usage in the sentence. If we talk about human languages, then they are ambiguous too because many words can be interpreted in multiple ways depending upon the context of their occurrence.</p></li>
+<li><p>Word sense disambiguation, in natural language processing (NLP), may be defined as the ability to determine which meaning of word is activated by the use of word in a particular context. Lexical ambiguity, syntactic or semantic, is one of the very first problem that any NLP system faces. Part-of-speech (POS) taggers with high level of accuracy can solve Word’s syntactic ambiguity. On the other hand, the problem of resolving semantic ambiguity is called WSD (word sense disambiguation). Resolving semantic ambiguity is harder than resolving syntactic ambiguity.</p></li>
+<li><p>For example, consider the two examples of the distinct sense that exist for the word “bass” −</p>
+
+<ul>
+<li><p>I can hear bass sound.</p></li>
+<li><p>He likes to eat grilled bass.</p></li>
+</ul></li>
+<li><p>The occurrence of the word bass clearly denotes the distinct meaning. In first sentence, it means frequency and in second, it means fish. Hence, if it would be disambiguated by WSD then the correct meaning to the above sentences can be assigned as follows −</p>
+
+<ul>
+<li><p>I can hear bass/frequency sound.</p></li>
+<li><p>He likes to eat grilled bass/fish.</p></li>
+</ul></li>
+<li><p>Evaluation of WSD</p>
+
+<ul>
+<li>The evaluation of WSD requires the following two inputs −</li>
+</ul></li>
+<li><p>A Dictionary</p>
+
+<ul>
+<li>The very first input for evaluation of WSD is dictionary, which is used to specify the senses to be disambiguated.</li>
+</ul></li>
+<li><p>Test Corpus</p>
+
+<ul>
+<li><p>Another input required by WSD is the high-annotated test corpus that has the target or correct-senses. The test corpora can be of two types &minsu;</p></li>
+<li><p>Lexical sample − This kind of corpora is used in the system, where it is required to disambiguate a small sample of words.</p></li>
+<li><p>All-words − This kind of corpora is used in the system, where it is expected to disambiguate all the words in a piece of running text.</p></li>
+</ul></li>
+</ul></li>
+<li><h2>Lesk algorithm for word sense disambiguation</h2>
+
+<ul>
+<li>seminal dictionary based method</li>
+<li>The Lesk algorithm is based on the idea that words in a given region of the text will have a similar meaning. In the Simplified Lesk Algorithm, the correct meaning of each word context is found by getting the sense which overlaps the most among the given context and its dictionary meaning.</li>
+<li>As the name suggests, for disambiguation, these methods primarily rely on dictionaries, treasures and lexical knowledge base. They do not use corpora evidences for disambiguation. The Lesk method is the seminal dictionary-based method introduced by Michael Lesk in 1986. The Lesk definition, on which the Lesk algorithm is based is “measure overlap between sense definitions for all words in context”. However, in 2000, Kilgarriff and Rosensweig gave the simplified Lesk definition as “measure overlap between sense definitions of word and current context”, which further means identify the correct sense for one word at a time. Here the current context is the set of words in surrounding sentence or paragraph.</li>
+</ul></li>
+<li><h2>Concept of lexical analysis,syntax analysis and semantic analysis</h2>
+
+<ul>
+<li>The main difference between syntax analysis and semantic analysis is that syntax analysis takes the tokens generated by the lexical analysis and generates a parse tree while semantic analysis checks whether the parse tree generated by syntax analysis follows the rules of the language</li>
+<li><p>syntax analysis</p>
+
+<ul>
+<li>Syntactic analysis or parsing or syntax analysis is the third phase of NLP. The purpose of this phase is to draw exact meaning, or you can say dictionary meaning from the text. Syntax analysis checks the text for meaningfulness comparing to the rules of formal grammar. For example, the sentence like “hot ice-cream” would be rejected by semantic analyzer.</li>
+</ul>
+
+<p>In this sense, syntactic analysis or parsing may be defined as the process of analyzing the strings of symbols in natural language conforming to the rules of formal grammar. The origin of the word ‘parsing’ is from Latin word ‘pars’ which means ‘part’.</p>
+
+<p>Concept of Parser
+It is used to implement the task of parsing. It may be defined as the software component designed for taking input data (text) and giving structural representation of the input after checking for correct syntax as per formal grammar. It also builds a data structure generally in the form of parse tree or abstract syntax tree or other hierarchical structure.</p>
+
+<p>Symbol Table
+The main roles of the parse include −</p>
+
+<p>To report any syntax error.</p>
+
+<p>To recover from commonly occurring error so that the processing of the remainder of program can be continued.</p>
+
+<p>To create parse tree.</p>
+
+<p>To create symbol table.</p>
+
+<p><p><p>To produce intermediate representations (IR).</p></li>
+</ul></p></li>
+<li><h2>NLP and Deep learning</h2></p>
+
+<ul>
+<li>In recent years, a variety of deep learning models have been applied to natural language processing (NLP) to improve, accelerate, and automate the text analytics functions and NLP features. Moreover, these models and methods are offering superior solutions to convert unstructured text into valuable data and insights.</li>
+<li>The use of neutral networks for NLP did not start until the early 2000s. But by the end of 2010s, neural networks transformed NLP , enhancing or even replacing earlier techniques. This has been made possible because we now have more data to train neural network models and more powerful computing systems to do so.</li>
+<li><a href="https://blog.paperspace.com/6-interesting-deep-learning-applications-for-nlp/">Applications</a>
+<ul>
+<li><ol>
+<li>Tokenization and Text Classification</li>
+</ol></li>
+<li><ol>
+<li>Generating Captions for Images</li>
+</ol></li>
+<li><ol>
+<li>Speech Recognition</li>
+</ol></li>
+<li><ol>
+<li>Machine Translation</li>
+</ol></li>
+<li><ol>
+<li>Question Answering (QA)</li>
+</ol></li>
+<li><ol>
+<li>Document Summarization</li>
+</ol></li>
+</ul></li>
+</ul></li>
+<li><h2>Sequence learning problems</h2></li>
 <li>## Concept of Selective Read, write and erase </li>
 <li>## RNN,LSTM and GRU</li>
-<li>## Text classification</li>
-<li>## Examples of Text classification</li>
+<li><h2>Text classification</h2>
+
+<h2>- ## Examples of Text classification</h2></li>
+<li><h2>List of PDFs</h2>
+
+<ul>
+<li>CBOW</li>
+<li>Language models</li>
+<li>[Hard] NLP Model </li>
+</ul></li>
 </ul>
