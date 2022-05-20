@@ -1,5 +1,6 @@
 # Information Retrieval System
 
+
 - ## Types of queries
 	- 1. Keyword Queries :
 		- Simplest and most common queries.
@@ -74,7 +75,7 @@
 
 	- The retrieval models discussed so far are based on keyword or term matching, i.e., matching terms in the user query with those in the documents. However, many concepts or objects can be described in multiple ways (using different words) due to the context and people’s language habits. If a user query uses different words from the words used in a document, the document will not be retrieved although it may be relevant because the document uses some symonyms of the words in the user query. This causes low recall. For example, “picture”, “image” and “photo” are synonyms in the context of digital cameras. If the user query only has the word “picture”, relevant documents that contain “image” or “photo” but not “picture” will not be retrieved.
 	- Latent semantic indexing (LSI), proposed by Deerwester et al. [125], aims to deal with this problem through the identification of statistical associations of terms. It is assumed that there is some underlying latent semantic structure in the data that is partially obscured by the randomness of word choice. It then uses a statistical technique, called singular value decomposition (SVD) [203], to estimate this latent structure, and to remove the “noise”. The results of this decomposition are descriptions of terms and documents based on the latent semantic structure derived from SVD. This structure is also called the hidden “concept” space, which associates syntactically different but semantically similar terms and documents. These transformed terms and documents in the “concept” space are then used in retrieval, not the original terms or documents. Furthermore, the query is also transformed into the “concept” space before retrieval.
-	- Let D be the text collection, the number of distinctive words in D be m and the number of documents in D be n. LSI starts with an m n term-document matrix A. Each row of A represents a term and each column represents a document. The matrix may be computed in various ways, e.g., using term frequency or TF-IDF values. We use term frequency as an example in this section. Thus, each entry or cell of the matrix A, denoted by Aij, is the number of times that term i occurs in document j.
+	- Let D be the text collection, the number of distinctive words in D be m and the number of documents in D be n. LSI starts with an m�n term-document matrix A. Each row of A represents a term and each column represents a document. The matrix may be computed in various ways, e.g., using term frequency or TF-IDF values. We use term frequency as an example in this section. Thus, each entry or cell of the matrix A, denoted by Aij, is the number of times that term i occurs in document j.
 
 - ## Markov Model
 	- A Markov Model is a *stochastic* model which models temporal or sequential data, i.e., data that are ordered.
