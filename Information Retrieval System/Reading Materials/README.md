@@ -1,31 +1,31 @@
 # Information Retrieval System
 
 - ## Types of queries
-	1. Keyword Queries :
+	- 1. Keyword Queries :
 		- Simplest and most common queries.
 		- The user enters just keyword combinations to retrieve documents.
 		- These keywords are connected by logical AND operator.
 		- All retrieval models provide support for keyword queries.
-	2. Boolean Queries :
+	- 2. Boolean Queries :
 		- Some IR systems allow using +, -, AND, OR, NOT, ( ), Boolean operators in combination of keyword formulations.
 		- No ranking is involved because a document either satisfies such a query or does not satisfy it.
 		- A document is retrieved for boolean query if it is logically true as exact match in document.
-	3. Phase Queries :
+	- 3. Phase Queries :
 		- When documents are represented using an inverted keyword index for searching, the relative order of items in document is lost.
 		- To perform exact phase retrieval, these phases are encoded in inverted index or implemented differently.
 		- This query consists of a sequence of words that make up a phase.
 		- It is generally enclosed within double quotes.
-	4. Proximity Queries :
+	- 4. Proximity Queries :
 		- Proximity refers ti search that accounts for how close within a record multiple items should be to each other.
 		- Most commonly used proximity search option is a phase search that requires terms to be in exact order.
 		- Other proximity operators can specify how close terms should be to each other. Some will specify the order of search terms.
 		- Search engines use various operators names such as NEAR, ADJ (adjacent), or AFTER.
 		- However, providing support for complex proximity operators becomes expensive as it requires time-consuming pre-processing of documents and so it is suitable for smaller document collections rather than for web.
-	5. Wildcard Queries :
+	- 5. Wildcard Queries :
 		- It supports regular expressions and pattern matching-based searching in text.
 		- Retrieval models do not directly support for this query type.
 		- In IR systems, certain kinds of wildcard search support may be implemented. Example: usually words ending with trailing characters.
-	6. Natural Language Queries :
+	- 6. Natural Language Queries :
 		- There are only a few natural language search engines that aim to understand the structure and meaning of queries written in natural language text, generally as question or narrative.
 		- The system tries to formulate answers for these queries from retrieved results.
 		- Semantic models can provide support for this query type.
